@@ -1,0 +1,7 @@
+# These file types and folders should be ignored the tracking by git :
+
+*.xcworkspace
+*.xcuserdatad
+*.o
+*.obj
+*.exe
