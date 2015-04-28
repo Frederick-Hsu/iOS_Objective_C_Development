@@ -11,6 +11,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define DISPLAY_ATTRIBUTED_EXT
 
 @interface ViewController : UIViewController
 
