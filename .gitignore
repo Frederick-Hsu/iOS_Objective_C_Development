@@ -6,3 +6,4 @@
 *.obj
 *.exe
 *.DS_Store
+/.project
