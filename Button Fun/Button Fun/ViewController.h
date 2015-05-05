@@ -8,15 +8,19 @@
  *************************************************************************************************************************/
 
 
+#ifndef VIEWCONTROLLER_H
+#define VIEWCONTROLLER_H
 
-#import <UIKit/UIKit.h>
+    #import <UIKit/UIKit.h>
 
+    #define DISPLAY_ATTRIBUTED_EXT
 
-@interface ViewController : UIViewController
+    @interface ViewController : UIViewController
 
-    @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+        @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
-    - (IBAction)buttonPressed:(UIButton *)sender;
+        - (IBAction)buttonPressed:(UIButton *)sender;
 
-@end
+    @end
 
+#endif  /*  VIEWCONTROLLER_H  */

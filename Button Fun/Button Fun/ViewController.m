@@ -34,7 +34,7 @@
         NSString *title = [sender titleForState:UIControlStateNormal];
         NSString *plainText = [NSString stringWithFormat:@"%@ had been pressed.", title];
 
-        #if !defined (DISPLAY_ATTRIBUTED_EXT)
+        #if defined (DISPLAY_ATTRIBUTED_EXT)
             NSMutableAttributedString *styledText = [[NSMutableAttributedString alloc] initWithString:plainText];
         
             NSDictionary *attributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:_statusLabel.font.pointSize]};
