@@ -18,5 +18,9 @@
         NSLog(@"I am %d years old now.", age);
     }
 
+    -(void)shout
+    {
+        NSLog(@"The cat had shouted its distinctive sound.");
+    }
 
 @end
