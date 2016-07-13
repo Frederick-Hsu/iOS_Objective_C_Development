@@ -17,6 +17,8 @@
 		7B3894C31D366EF900478824 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894C21D366EF900478824 /* Dog.m */; };
 		7B3894C61D366F6500478824 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894C51D366F6500478824 /* Cat.m */; };
 		7B3894C91D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894C81D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m */; };
+		7B3894CD1D36863100478824 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894CC1D36863100478824 /* Person.m */; };
+		7B3894CF1D36884E00478824 /* test_OOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894CE1D36884E00478824 /* test_OOP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +54,10 @@
 		7B3894C51D366F6500478824 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		7B3894C71D3674B300478824 /* test_Encapsulation_Inheritance_Polymorphism.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Encapsulation_Inheritance_Polymorphism.h; sourceTree = "<group>"; };
 		7B3894C81D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_Encapsulation_Inheritance_Polymorphism.m; sourceTree = "<group>"; };
+		7B3894CB1D36863100478824 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = OOP/Person.h; sourceTree = "<group>"; };
+		7B3894CC1D36863100478824 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = OOP/Person.m; sourceTree = "<group>"; };
+		7B3894CE1D36884E00478824 /* test_OOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test_OOP.m; path = OOP/test_OOP.m; sourceTree = "<group>"; };
+		7B3894D01D36886000478824 /* test_OOP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test_OOP.h; path = OOP/test_OOP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		7B3894A41D3646A600478824 /* ObjectiveC_OOP */ = {
 			isa = PBXGroup;
 			children = (
+				7B3894CA1D36856800478824 /* OOP */,
 				7B3894A51D3646A600478824 /* main.m */,
 				7B3894AF1D3648F000478824 /* Student.h */,
 				7B3894B01D3648F000478824 /* Student.m */,
@@ -105,6 +112,17 @@
 				7B3894C81D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m */,
 			);
 			path = ObjectiveC_OOP;
+			sourceTree = "<group>";
+		};
+		7B3894CA1D36856800478824 /* OOP */ = {
+			isa = PBXGroup;
+			children = (
+				7B3894CB1D36863100478824 /* Person.h */,
+				7B3894CC1D36863100478824 /* Person.m */,
+				7B3894CE1D36884E00478824 /* test_OOP.m */,
+				7B3894D01D36886000478824 /* test_OOP.h */,
+			);
+			name = OOP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +183,7 @@
 			files = (
 				7B3894C91D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m in Sources */,
 				7B3894BD1D365C7700478824 /* Car.m in Sources */,
+				7B3894CD1D36863100478824 /* Person.m in Sources */,
 				7B3894B41D364D6000478824 /* Calculator.m in Sources */,
 				7B3894C31D366EF900478824 /* Dog.m in Sources */,
 				7B3894C61D366F6500478824 /* Cat.m in Sources */,
@@ -172,6 +191,7 @@
 				7B3894B91D364FE900478824 /* use_class_object.m in Sources */,
 				7B3894C01D366EB400478824 /* Animal.m in Sources */,
 				7B3894A61D3646A600478824 /* main.m in Sources */,
+				7B3894CF1D36884E00478824 /* test_OOP.m in Sources */,
 				7B3894B11D3648F000478824 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
