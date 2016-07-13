@@ -13,6 +13,10 @@
 		7B3894B71D364FBC00478824 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894B61D364FBC00478824 /* test.m */; };
 		7B3894B91D364FE900478824 /* use_class_object.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894B81D364FE900478824 /* use_class_object.m */; };
 		7B3894BD1D365C7700478824 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894BC1D365C7700478824 /* Car.m */; };
+		7B3894C01D366EB400478824 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894BF1D366EB400478824 /* Animal.m */; };
+		7B3894C31D366EF900478824 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894C21D366EF900478824 /* Dog.m */; };
+		7B3894C61D366F6500478824 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894C51D366F6500478824 /* Cat.m */; };
+		7B3894C91D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894C81D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +44,14 @@
 		7B3894BA1D364FFD00478824 /* use_class_object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = use_class_object.h; sourceTree = "<group>"; };
 		7B3894BB1D365C7700478824 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		7B3894BC1D365C7700478824 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		7B3894BE1D366EB400478824 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		7B3894BF1D366EB400478824 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		7B3894C11D366EF900478824 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		7B3894C21D366EF900478824 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		7B3894C41D366F6500478824 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		7B3894C51D366F6500478824 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		7B3894C71D3674B300478824 /* test_Encapsulation_Inheritance_Polymorphism.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Encapsulation_Inheritance_Polymorphism.h; sourceTree = "<group>"; };
+		7B3894C81D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_Encapsulation_Inheritance_Polymorphism.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,14 @@
 				7B3894BA1D364FFD00478824 /* use_class_object.h */,
 				7B3894BB1D365C7700478824 /* Car.h */,
 				7B3894BC1D365C7700478824 /* Car.m */,
+				7B3894BE1D366EB400478824 /* Animal.h */,
+				7B3894BF1D366EB400478824 /* Animal.m */,
+				7B3894C11D366EF900478824 /* Dog.h */,
+				7B3894C21D366EF900478824 /* Dog.m */,
+				7B3894C41D366F6500478824 /* Cat.h */,
+				7B3894C51D366F6500478824 /* Cat.m */,
+				7B3894C71D3674B300478824 /* test_Encapsulation_Inheritance_Polymorphism.h */,
+				7B3894C81D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m */,
 			);
 			path = ObjectiveC_OOP;
 			sourceTree = "<group>";
@@ -143,10 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3894C91D3674EE00478824 /* test_Encapsulation_Inheritance_Polymorphism.m in Sources */,
 				7B3894BD1D365C7700478824 /* Car.m in Sources */,
 				7B3894B41D364D6000478824 /* Calculator.m in Sources */,
+				7B3894C31D366EF900478824 /* Dog.m in Sources */,
+				7B3894C61D366F6500478824 /* Cat.m in Sources */,
 				7B3894B71D364FBC00478824 /* test.m in Sources */,
 				7B3894B91D364FE900478824 /* use_class_object.m in Sources */,
+				7B3894C01D366EB400478824 /* Animal.m in Sources */,
 				7B3894A61D3646A600478824 /* main.m in Sources */,
 				7B3894B11D3648F000478824 /* Student.m in Sources */,
 			);
