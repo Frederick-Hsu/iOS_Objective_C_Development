@@ -13,4 +13,6 @@
 
     void useClassCalculator(void);
 
+    void useClassCar(void);
+
 #endif  /* USE_CLASS_OBJECT_H */
