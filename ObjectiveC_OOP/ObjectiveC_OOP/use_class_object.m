@@ -10,6 +10,8 @@
 
 #import "use_class_object.h"
 #import "Calculator.h"
+#import "Car.h"
+#import "Student.h"
 
 void useClassCalculator(void)
 {
@@ -24,5 +26,29 @@ void useClassCalculator(void)
     double sum = [calc sumOfNumbers : 2.5 : 3.6];
     NSLog(@"The sum of 2.5 and 3.6 is : %f", sum);
     
+    return;
+}
+
+void useClassCar(void)
+{
+    Car *myCar = [[Car alloc] init];
+    myCar->price = 80000.00;
+    myCar->wheel = 4;
+    [myCar run];
+    return;
+}
+
+void testSetterAndGetterMethods(void)
+{
+    Student *stu = [[Student alloc] init];
+    [stu setWeight : -10];
+    [stu setAge : 1000];
+    [stu display];
+    
+    [stu setWeight : 64];
+    [stu setAge : 25];
+    NSLog(@"This student's age is : %d, and his weight is : %f",
+          [stu getAge], [stu getWeight]);
+    [stu display];
     return;
 }

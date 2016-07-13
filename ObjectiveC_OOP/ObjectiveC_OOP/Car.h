@@ -1,20 +1,26 @@
 /**************************************************************************************************
- * File name    : use_class_object.h
- * Description  : Demonstrate and test how to use the class and their methods.
+ * File name    : Car.h
+ * Description  : Declare the class of Car.
  * Creator      : Frederick Hsu
  * Creation date: Wed.  13 July, 2016
  * Copyright(C) 2016    All rights reserved.
  *
  **************************************************************************************************/
 
+#ifndef CAR_H
+#define CAR_H
 
-#ifndef USE_CLASS_OBJECT_H
-#define USE_CLASS_OBJECT_H
+    #import <Foundation/Foundation.h>
 
-    void useClassCalculator(void);
+    @interface Car : NSObject
+    {
+        @public
+        float price;
+        int wheel;
+    }
 
-    void useClassCar(void);
+        -(void)run;
 
-    void testSetterAndGetterMethods(void);
+    @end
 
-#endif  /* USE_CLASS_OBJECT_H */
+#endif  /* CAR_H */

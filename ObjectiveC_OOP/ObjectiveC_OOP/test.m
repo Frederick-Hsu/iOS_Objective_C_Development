@@ -19,4 +19,6 @@ void performProjectTestCases(void)
 void testHowToUseClassObject(void)
 {
     useClassCalculator();
+    useClassCar();
+    testSetterAndGetterMethods();
 }

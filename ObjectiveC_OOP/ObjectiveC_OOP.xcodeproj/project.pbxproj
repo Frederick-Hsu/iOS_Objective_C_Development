@@ -12,6 +12,7 @@
 		7B3894B41D364D6000478824 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894B31D364D6000478824 /* Calculator.m */; };
 		7B3894B71D364FBC00478824 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894B61D364FBC00478824 /* test.m */; };
 		7B3894B91D364FE900478824 /* use_class_object.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894B81D364FE900478824 /* use_class_object.m */; };
+		7B3894BD1D365C7700478824 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3894BC1D365C7700478824 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		7B3894B61D364FBC00478824 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		7B3894B81D364FE900478824 /* use_class_object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = use_class_object.m; sourceTree = "<group>"; };
 		7B3894BA1D364FFD00478824 /* use_class_object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = use_class_object.h; sourceTree = "<group>"; };
+		7B3894BB1D365C7700478824 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		7B3894BC1D365C7700478824 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				7B3894B61D364FBC00478824 /* test.m */,
 				7B3894B81D364FE900478824 /* use_class_object.m */,
 				7B3894BA1D364FFD00478824 /* use_class_object.h */,
+				7B3894BB1D365C7700478824 /* Car.h */,
+				7B3894BC1D365C7700478824 /* Car.m */,
 			);
 			path = ObjectiveC_OOP;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3894BD1D365C7700478824 /* Car.m in Sources */,
 				7B3894B41D364D6000478824 /* Calculator.m in Sources */,
 				7B3894B71D364FBC00478824 /* test.m in Sources */,
 				7B3894B91D364FE900478824 /* use_class_object.m in Sources */,
@@ -263,6 +269,7 @@
 				7B3894AB1D3646A600478824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
