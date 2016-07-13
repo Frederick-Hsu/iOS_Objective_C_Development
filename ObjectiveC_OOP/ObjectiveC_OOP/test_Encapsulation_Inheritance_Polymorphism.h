@@ -11,5 +11,16 @@
 #ifndef TEST_ENCAPSULATION_INHERITANCE_POLYMORPHISM_H
 #define TEST_ENCAPSULATION_INHERITANCE_POLYMORPHISM_H
 
+    #import "Animal.h"
+
+    void verifyOOP3Features(void);
+
+    void testInheritance(void);
+
+    void call(Animal *al);
+
+    void testPolymorphism(void);
+
+    void typeCastingForObjects(void);
 
 #endif /* TEST_ENCAPSULATION_INHERITANCE_POLYMORPHISM_H */
