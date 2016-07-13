@@ -10,10 +10,14 @@
 
 #import "test.h"
 #import "use_class_object.h"
+#import "test_Encapsulation_Inheritance_Polymorphism.h"
+#import "OOP/test_OOP.h"
 
 void performProjectTestCases(void)
 {
-    testHowToUseClassObject();    
+    testHowToUseClassObject();
+    verifyOOP3Features();
+    testOOPImportantFeatures();
 }
 
 void testHowToUseClassObject(void)
