@@ -19,6 +19,7 @@
     }
 
         -(void)print;
+        -(void)shout;
 
     @end
 

@@ -17,4 +17,10 @@
         NSLog(@"I am %d years old now.", age);
     }
 
+    -(void)shout
+    {
+        [super shout];      // super指向父类
+        NSLog(@"The dog had shouted its distinctive sound.");
+    }
+
 @end
