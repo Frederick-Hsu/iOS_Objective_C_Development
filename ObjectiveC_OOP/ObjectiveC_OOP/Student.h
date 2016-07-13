@@ -15,12 +15,17 @@
 
     @interface Student : NSObject
     {
-        @public
-        float weight;
-        int age;
+        @private
+        float _weight;
+        int _age;
     }
 
         -(void)display;
+
+        -(void)setWeight : (float)weight;
+        -(float)getWeight;
+        -(void)setAge : (int)age;
+        -(int)getAge;
 
     @end
 
