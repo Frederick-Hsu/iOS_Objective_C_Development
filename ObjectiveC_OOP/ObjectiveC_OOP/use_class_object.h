@@ -15,4 +15,6 @@
 
     void useClassCar(void);
 
+    void testSetterAndGetterMethods(void);
+
 #endif  /* USE_CLASS_OBJECT_H */

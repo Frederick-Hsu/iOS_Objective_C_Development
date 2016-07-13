@@ -20,4 +20,5 @@ void testHowToUseClassObject(void)
 {
     useClassCalculator();
     useClassCar();
+    testSetterAndGetterMethods();
 }
