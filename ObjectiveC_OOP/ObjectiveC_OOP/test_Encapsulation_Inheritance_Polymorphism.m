@@ -25,6 +25,10 @@ void verifyOOP3Features(void)
     NSLog(@"\n\n");
     NSLog(@"Polymorphism feature : ");
     testPolymorphism();
+    
+    NSLog(@"\n\n");
+    NSLog(@"Test how to self-call the class method function.");
+    testSelfCallMethodFunction();
 }
 
 void testInheritance(void)
@@ -58,4 +62,10 @@ void typeCastingForObjects(void)
     Cat *c = [[Dog alloc] init];    // 不同类类型之间转换，即使强制转换或继承自同一个父类，
     Dog *dc = (Dog *)c;             // 也会带来类型不匹配警告或直接错误。
     [dc print];
+}
+
+void testSelfCallMethodFunction(void)
+{
+    Dog *dog = [[Dog alloc] init];
+    [dog run];
 }
