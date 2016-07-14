@@ -15,4 +15,6 @@
 
     void testPerson(void);
 
+    void testDotSyntaxToCallGetterSetter(void);
+
 #endif  /* TEST_OOP_H */

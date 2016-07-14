@@ -15,10 +15,13 @@
     -(void)setAge : (int)age
     {
         _age = age;
+        NSLog(@"Called the default Setter method");
+        // self.age = age;     // 不能在Setter方法自身里面使用点语法，会造成循环引用。
     }
 
     -(int)getAge
     {
+        NSLog(@"Called the non-default Getter method");
         return _age;
     }
 
@@ -29,6 +32,13 @@
         NSLog(@"Current age of this person is : %d", _age);
         /* 使用self指向对象自身，才可以去访问类中的成员变量 */
         NSLog(@"The original age of this person is : %d", self->_age);
+    }
+
+    -(int)age
+    {
+        NSLog(@"Called the default Getter method.");
+        // return self.age;     // 不能在Getter方法自身里面使用点语法
+        return _age;
     }
 
 @end
