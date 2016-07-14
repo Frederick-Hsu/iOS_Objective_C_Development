@@ -29,6 +29,8 @@
         NSLog(@"Current age of this person is : %d", _age);
         /* 使用self指向对象自身，才可以去访问类中的成员变量 */
         NSLog(@"The original age of this person is : %d", self->_age);
+        
+        // [self test];     // 避免使用self调用方法自身，造成程序死循环。
     }
 
 @end
