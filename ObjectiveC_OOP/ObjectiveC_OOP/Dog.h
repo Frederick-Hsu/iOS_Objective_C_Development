@@ -20,6 +20,8 @@
 
         -(void)print;
         -(void)shout;
+        -(void)bark;
+        -(void)run;
 
     @end
 
