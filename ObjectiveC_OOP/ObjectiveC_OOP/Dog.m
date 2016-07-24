@@ -23,4 +23,15 @@
         NSLog(@"The dog had shouted its distinctive sound.");
     }
 
+    -(void)bark
+    {
+        NSLog(@"The dog is barking now.");
+    }
+
+    -(void)run
+    {
+        [self bark];
+        NSLog(@"The dog is running as well.");
+    }
+
 @end

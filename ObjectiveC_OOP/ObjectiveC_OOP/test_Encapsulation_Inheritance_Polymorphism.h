@@ -23,4 +23,6 @@
 
     void typeCastingForObjects(void);
 
+    void testSelfCallMethodFunction(void);
+
 #endif /* TEST_ENCAPSULATION_INHERITANCE_POLYMORPHISM_H */
