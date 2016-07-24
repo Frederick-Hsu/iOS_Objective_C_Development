@@ -13,6 +13,9 @@
 
     #import <Foundation/Foundation.h>
 
+    #define ENABLE_ARC
+
+
     @interface CPerson : NSObject
 
         @property (nonatomic, assign) int age;
