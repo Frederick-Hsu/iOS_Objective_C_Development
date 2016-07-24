@@ -15,4 +15,6 @@
 
     void testCase_ReferenceCounting(void);
 
+    void testCase_AutoReleasePool(void);
+
 #endif  /* TEST_MEMORY_MANAGEMENT_H */

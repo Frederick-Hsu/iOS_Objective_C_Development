@@ -14,12 +14,14 @@
 
 void testCases4_MemoryManagement(void)
 {
-    NSLog(@"Test the Reference Counting feature,");
+    NSLog(@"Test the Reference Counting feature : ");
     testCase_ReferenceCounting();
+    testCase_AutoReleasePool();
 }
 
 void testCase_ReferenceCounting(void)
 {
+#if !defined (ENABLE_ARC)
     // 生成对象， 引用计数由 0 ---> 1
     CPerson *cp = [[CPerson alloc] initWithAge : 10];
     NSLog(@"Instantiate and generate the 'cp' object, its current count : %lu", [cp retainCount]);
@@ -59,4 +61,24 @@ void testCase_ReferenceCounting(void)
     cp = nil;       // 清空僵尸对象。
     
     return;
+#endif  /* ENABLE_ARC */
+}
+
+
+void testCase_AutoReleasePool(void)
+{
+#if !defined (ENABLE_ARC)
+    @autoreleasepool    // 离开自动释放池的区域范围，对象会自动被销毁。
+    {
+        CPerson *per = [[[CPerson alloc] initWithAge:20] autorelease];
+        NSLog(@"Currently, the reference count is : %lu", [per retainCount]);
+    }
+#else
+    @autoreleasepool
+    {
+        CPerson *per = [[CPerson alloc] initWithAge:30];
+        per.age = 33;
+        NSLog(@"This person's is : %d", per.age);
+    }
+#endif  /* ENABLE_ARC */
 }
