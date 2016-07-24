@@ -28,6 +28,7 @@
     -(void)dealloc
     {
         NSLog(@"%@ was destroyed!", self);
+        // [super dealloc];    // Error : ARC forbids explicit message send of 'dealloc'
     }
 #endif
 
