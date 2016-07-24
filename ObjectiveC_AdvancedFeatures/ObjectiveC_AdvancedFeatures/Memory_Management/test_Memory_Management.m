@@ -79,6 +79,9 @@ void testCase_AutoReleasePool(void)
         CPerson *per = [[CPerson alloc] initWithAge:30];
         per.age = 33;
         NSLog(@"This person's is : %d", per.age);
+        
+        // [per retain];   // Error : 'retain' is unavailable in automatic reference counting mode.
+        // [per release];      // Error : 'release' is unavailable in automatic reference counting mode.
     }
 #endif  /* ENABLE_ARC */
 }
