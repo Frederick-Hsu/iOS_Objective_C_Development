@@ -17,4 +17,6 @@
 
     void testCase_AutoReleasePool(void);
 
+    void testCase_StrongAndWeakPointer(void);
+
 #endif  /* TEST_MEMORY_MANAGEMENT_H */
