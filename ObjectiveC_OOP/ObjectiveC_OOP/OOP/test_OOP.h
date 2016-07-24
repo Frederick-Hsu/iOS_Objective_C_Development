@@ -17,4 +17,8 @@
 
     void testDotSyntaxToCallGetterSetter(void);
 
+    void testPropertyOfObjectiveC(void);
+
+    void testMethodOfObjectiveC(void);
+
 #endif  /* TEST_OOP_H */

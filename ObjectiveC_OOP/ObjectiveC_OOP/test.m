@@ -25,4 +25,6 @@ void testHowToUseClassObject(void)
     useClassCalculator();
     useClassCar();
     testSetterAndGetterMethods();
+    testPropertyOfObjectiveC();
+    testMethodOfObjectiveC();
 }

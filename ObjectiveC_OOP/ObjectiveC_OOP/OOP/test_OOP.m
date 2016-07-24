@@ -10,6 +10,8 @@
 
 #import "test_OOP.h"
 #import "Person.h"
+#import "test_property.h"
+#import "test_method.h"
 
 void testOOPImportantFeatures(void)
 {
@@ -43,4 +45,16 @@ void testDotSyntaxToCallGetterSetter(void)
     int a = p.age;
     NSLog(@"-------------------------------------------------------------");
     [p test];
+}
+
+void testPropertyOfObjectiveC(void)
+{
+    NSLog(@"\n\nThis test case is used to verify the property in Objective-C programming.");
+    testcase4verifyProperty();
+}
+
+void testMethodOfObjectiveC(void)
+{
+    NSLog(@"\n\nThis test case is used to verify the method in Objective-C programming.");
+    testCases4VerifyClassMethods();
 }
