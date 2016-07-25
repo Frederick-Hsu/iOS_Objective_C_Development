@@ -10,6 +10,7 @@
 
 #import "test_Memory_Management.h"
 #import "CPerson.h"
+#import "Dog.h"
 
 static void StrongPointer(void);
 static void WeakPointer(void);
@@ -22,6 +23,9 @@ void testCases4_MemoryManagement(void)
     
     NSLog(@"Verify strong and weak pointer : ");
     testCase_StrongAndWeakPointer();
+    
+    NSLog(@"Verify the strong and weak property : ");
+    testCase_StrongAndWeakProperty();
 }
 
 void testCase_ReferenceCounting(void)
@@ -114,4 +118,16 @@ static void WeakPointer(void)
     person = nil;
     NSLog(@"----------------------------------------------");
     return;
+}
+
+void testCase_StrongAndWeakProperty(void)
+{
+    @autoreleasepool
+    {
+        CPerson *per = [[CPerson alloc] init];
+        Dog *d = [[Dog alloc] init];
+        per.dog = d;
+        d = nil;
+        NSLog(@"---------------------------");
+    }
 }

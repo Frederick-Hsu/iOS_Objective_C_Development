@@ -11,6 +11,7 @@
 		7B6C431D1D44E096003E4C8A /* CPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C431C1D44E096003E4C8A /* CPerson.m */; };
 		7B6C431F1D44E0C3003E4C8A /* test_Memory_Management.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C431E1D44E0C3003E4C8A /* test_Memory_Management.m */; };
 		7B6C43231D44E136003E4C8A /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C43221D44E136003E4C8A /* test.m */; };
+		7B6C43251D450F73003E4C8A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C43241D450F73003E4C8A /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		7B6C43201D44E0E2003E4C8A /* test_Memory_Management.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test_Memory_Management.h; path = ObjectiveC_AdvancedFeatures/Memory_Management/test_Memory_Management.h; sourceTree = "<group>"; };
 		7B6C43211D44E124003E4C8A /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		7B6C43221D44E136003E4C8A /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		7B6C43241D450F73003E4C8A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = ObjectiveC_AdvancedFeatures/Memory_Management/Dog.m; sourceTree = "<group>"; };
+		7B6C43261D450F83003E4C8A /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = ObjectiveC_AdvancedFeatures/Memory_Management/Dog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				7B6C431C1D44E096003E4C8A /* CPerson.m */,
 				7B6C431E1D44E0C3003E4C8A /* test_Memory_Management.m */,
 				7B6C43201D44E0E2003E4C8A /* test_Memory_Management.h */,
+				7B6C43241D450F73003E4C8A /* Dog.m */,
+				7B6C43261D450F83003E4C8A /* Dog.h */,
 			);
 			name = Memory_Management;
 			path = ..;
@@ -153,6 +158,7 @@
 			files = (
 				7B6C431D1D44E096003E4C8A /* CPerson.m in Sources */,
 				7B6C43231D44E136003E4C8A /* test.m in Sources */,
+				7B6C43251D450F73003E4C8A /* Dog.m in Sources */,
 				7B6C43131D44BC66003E4C8A /* main.m in Sources */,
 				7B6C431F1D44E0C3003E4C8A /* test_Memory_Management.m in Sources */,
 			);
@@ -277,6 +283,7 @@
 				7B6C43181D44BC66003E4C8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
