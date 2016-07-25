@@ -10,13 +10,22 @@
 
 #import "test_Memory_Management.h"
 #import "CPerson.h"
+#import "Dog.h"
 
+static void StrongPointer(void);
+static void WeakPointer(void);
 
 void testCases4_MemoryManagement(void)
 {
     NSLog(@"Test the Reference Counting feature : ");
     testCase_ReferenceCounting();
     testCase_AutoReleasePool();
+    
+    NSLog(@"Verify strong and weak pointer : ");
+    testCase_StrongAndWeakPointer();
+    
+    NSLog(@"Verify the strong and weak property : ");
+    testCase_StrongAndWeakProperty();
 }
 
 void testCase_ReferenceCounting(void)
@@ -79,6 +88,46 @@ void testCase_AutoReleasePool(void)
         CPerson *per = [[CPerson alloc] initWithAge:30];
         per.age = 33;
         NSLog(@"This person's is : %d", per.age);
+        
+        // [per retain];   // Error : 'retain' is unavailable in automatic reference counting mode.
+        // [per release];      // Error : 'release' is unavailable in automatic reference counting mode.
     }
 #endif  /* ENABLE_ARC */
+}
+
+
+void testCase_StrongAndWeakPointer(void)
+{
+    StrongPointer();
+    WeakPointer();
+}
+
+static void StrongPointer(void)
+{
+    __strong CPerson *person = [[CPerson alloc] init];
+    NSLog(@"----------------------------------------------");
+    person = nil;   // Strong pointer will be destroyed after terminating the call to object.
+    NSLog(@"----------------------------------------------");
+    return;
+}
+static void WeakPointer(void)
+{
+    // 使用弱指针的对象，对象被创建完成，旋即被销毁。
+    __weak CPerson *person = [[CPerson alloc] init];    // Weak pointer will be released after assignment.
+    NSLog(@"----------------------------------------------");
+    person = nil;
+    NSLog(@"----------------------------------------------");
+    return;
+}
+
+void testCase_StrongAndWeakProperty(void)
+{
+    @autoreleasepool
+    {
+        CPerson *per = [[CPerson alloc] init];
+        Dog *d = [[Dog alloc] init];
+        per.dog = d;
+        d = nil;
+        NSLog(@"---------------------------");
+    }
 }
