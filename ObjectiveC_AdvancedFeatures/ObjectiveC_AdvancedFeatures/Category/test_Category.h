@@ -13,5 +13,6 @@
 
     void testCases4_Category(void);
     void testCase_VerifyHowToCallCategoryMethods(void);
+    void testCase4_VerifyExtendSystemBuiltinNSStringClass(void);
 
 #endif  /* TEST_CATEGORY_H */
