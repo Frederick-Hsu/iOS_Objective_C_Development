@@ -13,7 +13,7 @@
 
     #import <Foundation/Foundation.h>
 
-    @interface NSString(NumberEase)
+    @interface NSString (NumberEase)
 
         -(NSNumber*)lengthAsNumber;
 

@@ -12,11 +12,13 @@
 #import "Person.h"
 #import "Person+Wang.h"
 #import "NSString_Category.h"
+#import "Circle.h"
 
 void testCases4_Category(void)
 {
     testCase_VerifyHowToCallCategoryMethods();
     testCase4_VerifyExtendSystemBuiltinNSStringClass();
+    testCase4_VerifyClassExtension();
 }
 
 void testCase_VerifyHowToCallCategoryMethods(void)
@@ -42,4 +44,15 @@ void testCase4_VerifyExtendSystemBuiltinNSStringClass(void)
               @"我是上海交通大学2016届研究生，学生编号 ：116033210067",
               [@"我是上海交通大学2016届研究生，学生编号 ：116033210067" numberCount]);
     }
+}
+
+void testCase4_VerifyClassExtension(void)
+{
+    @autoreleasepool
+    {
+        Circle *cir = [[Circle alloc] init];
+        [cir makeCircle:2.5];
+        NSLog(@"The area of a circle is : %f", cir.area);
+    }
+    
 }
