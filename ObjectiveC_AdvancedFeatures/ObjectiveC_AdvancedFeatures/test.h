@@ -14,5 +14,6 @@
     void performProjectTestCases(void);
 
     void performTestCases4MemoryManagement(void);
+    void performTestCases4Category(void);
 
 #endif  /* TEST_H */
