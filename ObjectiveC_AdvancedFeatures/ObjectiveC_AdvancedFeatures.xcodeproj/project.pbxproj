@@ -17,6 +17,7 @@
 		7B6C43231D44E136003E4C8A /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C43221D44E136003E4C8A /* test.m */; };
 		7B6C43251D450F73003E4C8A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C43241D450F73003E4C8A /* Dog.m */; };
 		7B92C8411D58FD5E005713CE /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C8401D58FD5E005713CE /* Circle.m */; };
+		7BF8C50B1D80298600F7A51C /* ProtPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8C50A1D80298600F7A51C /* ProtPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,9 @@
 		7B6C43261D450F83003E4C8A /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = ObjectiveC_AdvancedFeatures/Memory_Management/Dog.h; sourceTree = "<group>"; };
 		7B92C83F1D58FD48005713CE /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = Category/Circle.h; sourceTree = "<group>"; };
 		7B92C8401D58FD5E005713CE /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = Category/Circle.m; sourceTree = "<group>"; };
+		7BF8C5071D80265500F7A51C /* MyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyProtocol.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/MyProtocol.h; sourceTree = "<group>"; };
+		7BF8C50A1D80298600F7A51C /* ProtPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtPerson.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/ProtPerson.m; sourceTree = "<group>"; };
+		7BF8C50C1D80299B00F7A51C /* ProtPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtPerson.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/ProtPerson.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,9 @@
 		7B6C431A1D44C0E1003E4C8A /* Protocol_and_Proxy */ = {
 			isa = PBXGroup;
 			children = (
+				7BF8C5071D80265500F7A51C /* MyProtocol.h */,
+				7BF8C50A1D80298600F7A51C /* ProtPerson.m */,
+				7BF8C50C1D80299B00F7A51C /* ProtPerson.h */,
 			);
 			name = Protocol_and_Proxy;
 			path = ..;
@@ -191,6 +198,7 @@
 			files = (
 				7B6C431D1D44E096003E4C8A /* CPerson.m in Sources */,
 				7B6C43231D44E136003E4C8A /* test.m in Sources */,
+				7BF8C50B1D80298600F7A51C /* ProtPerson.m in Sources */,
 				7B3BD7E91D5265A900563363 /* Person.m in Sources */,
 				7B6C43251D450F73003E4C8A /* Dog.m in Sources */,
 				7B6C43131D44BC66003E4C8A /* main.m in Sources */,
