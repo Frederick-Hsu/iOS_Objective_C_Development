@@ -15,5 +15,7 @@
 
     void performTestCases4MemoryManagement(void);
     void performTestCases4Category(void);
+    void performTestCase4Protocol(void);
+    void performTestCase4Delegate(void);
 
 #endif  /* TEST_H */
