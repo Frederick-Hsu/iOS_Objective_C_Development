@@ -15,11 +15,13 @@
 
     @protocol MyProtocol <NSObject>
 
-        -(void)eat;
+        @required
 
-    @optional
+            -(void)eat;
 
-        -(void)run;
+        @optional
+
+            -(void)run;
 
     @end
 

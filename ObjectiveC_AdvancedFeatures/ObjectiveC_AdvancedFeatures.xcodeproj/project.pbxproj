@@ -17,6 +17,12 @@
 		7B6C43231D44E136003E4C8A /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C43221D44E136003E4C8A /* test.m */; };
 		7B6C43251D450F73003E4C8A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C43241D450F73003E4C8A /* Dog.m */; };
 		7B92C8411D58FD5E005713CE /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C8401D58FD5E005713CE /* Circle.m */; };
+		7BE5F4EB1E1281EA00928D86 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5F4EA1E1281EA00928D86 /* Manager.m */; };
+		7BE5F4EE1E12853300928D86 /* Secretary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5F4ED1E12853300928D86 /* Secretary.m */; };
+		7BE5F4F11E12863F00928D86 /* test_Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5F4F01E12863F00928D86 /* test_Delegate.m */; };
+		7BEAEF9A1DC3665800C6766E /* test_Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEAEF991DC3665800C6766E /* test_Protocol.m */; };
+		7BEAEF9D1DC36C9800C6766E /* Assistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEAEF9C1DC36C9800C6766E /* Assistant.m */; };
+		7BEAEF9F1DC36FB300C6766E /* Leader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEAEF9E1DC36FB300C6766E /* Leader.m */; };
 		7BF8C50B1D80298600F7A51C /* ProtPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8C50A1D80298600F7A51C /* ProtPerson.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +59,19 @@
 		7B6C43261D450F83003E4C8A /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = ObjectiveC_AdvancedFeatures/Memory_Management/Dog.h; sourceTree = "<group>"; };
 		7B92C83F1D58FD48005713CE /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = Category/Circle.h; sourceTree = "<group>"; };
 		7B92C8401D58FD5E005713CE /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = Category/Circle.m; sourceTree = "<group>"; };
+		7BE5F4E81E127B7700928D86 /* TicketDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TicketDelegate.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/TicketDelegate.h; sourceTree = "<group>"; };
+		7BE5F4E91E127D0400928D86 /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Manager.h; sourceTree = "<group>"; };
+		7BE5F4EA1E1281EA00928D86 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Manager.m; sourceTree = "<group>"; };
+		7BE5F4EC1E1283EA00928D86 /* Secretary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Secretary.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Secretary.h; sourceTree = "<group>"; };
+		7BE5F4ED1E12853300928D86 /* Secretary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Secretary.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Secretary.m; sourceTree = "<group>"; };
+		7BE5F4EF1E12862100928D86 /* test_Delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test_Delegate.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/test_Delegate.h; sourceTree = "<group>"; };
+		7BE5F4F01E12863F00928D86 /* test_Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test_Delegate.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/test_Delegate.m; sourceTree = "<group>"; };
+		7BEAEF981DC3663700C6766E /* test_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test_Protocol.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/test_Protocol.h; sourceTree = "<group>"; };
+		7BEAEF991DC3665800C6766E /* test_Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test_Protocol.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/test_Protocol.m; sourceTree = "<group>"; };
+		7BEAEF9B1DC36C8000C6766E /* Assistant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Assistant.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Assistant.h; sourceTree = "<group>"; };
+		7BEAEF9C1DC36C9800C6766E /* Assistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Assistant.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Assistant.m; sourceTree = "<group>"; };
+		7BEAEF9E1DC36FB300C6766E /* Leader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Leader.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Leader.m; sourceTree = "<group>"; };
+		7BEAEFA01DC36FC600C6766E /* Leader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Leader.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/Leader.h; sourceTree = "<group>"; };
 		7BF8C5071D80265500F7A51C /* MyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyProtocol.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/MyProtocol.h; sourceTree = "<group>"; };
 		7BF8C50A1D80298600F7A51C /* ProtPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtPerson.m; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/ProtPerson.m; sourceTree = "<group>"; };
 		7BF8C50C1D80299B00F7A51C /* ProtPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProtPerson.h; path = ObjectiveC_AdvancedFeatures/Protocol_and_Proxy/ProtPerson.h; sourceTree = "<group>"; };
@@ -135,6 +154,19 @@
 				7BF8C5071D80265500F7A51C /* MyProtocol.h */,
 				7BF8C50A1D80298600F7A51C /* ProtPerson.m */,
 				7BF8C50C1D80299B00F7A51C /* ProtPerson.h */,
+				7BEAEF981DC3663700C6766E /* test_Protocol.h */,
+				7BEAEF991DC3665800C6766E /* test_Protocol.m */,
+				7BEAEF9B1DC36C8000C6766E /* Assistant.h */,
+				7BEAEF9C1DC36C9800C6766E /* Assistant.m */,
+				7BEAEF9E1DC36FB300C6766E /* Leader.m */,
+				7BEAEFA01DC36FC600C6766E /* Leader.h */,
+				7BE5F4E81E127B7700928D86 /* TicketDelegate.h */,
+				7BE5F4E91E127D0400928D86 /* Manager.h */,
+				7BE5F4EA1E1281EA00928D86 /* Manager.m */,
+				7BE5F4EC1E1283EA00928D86 /* Secretary.h */,
+				7BE5F4ED1E12853300928D86 /* Secretary.m */,
+				7BE5F4EF1E12862100928D86 /* test_Delegate.h */,
+				7BE5F4F01E12863F00928D86 /* test_Delegate.m */,
 			);
 			name = Protocol_and_Proxy;
 			path = ..;
@@ -196,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEAEF9F1DC36FB300C6766E /* Leader.m in Sources */,
+				7BE5F4F11E12863F00928D86 /* test_Delegate.m in Sources */,
 				7B6C431D1D44E096003E4C8A /* CPerson.m in Sources */,
 				7B6C43231D44E136003E4C8A /* test.m in Sources */,
 				7BF8C50B1D80298600F7A51C /* ProtPerson.m in Sources */,
@@ -203,10 +237,14 @@
 				7B6C43251D450F73003E4C8A /* Dog.m in Sources */,
 				7B6C43131D44BC66003E4C8A /* main.m in Sources */,
 				7B3BD7E71D52629500563363 /* NSString_Category.m in Sources */,
+				7BE5F4EE1E12853300928D86 /* Secretary.m in Sources */,
 				7B6C431F1D44E0C3003E4C8A /* test_Memory_Management.m in Sources */,
+				7BEAEF9D1DC36C9800C6766E /* Assistant.m in Sources */,
 				7B92C8411D58FD5E005713CE /* Circle.m in Sources */,
 				7B3BD7EF1D52680900563363 /* test_Category.m in Sources */,
 				7B3BD7ED1D5266D800563363 /* Person+Wang.m in Sources */,
+				7BE5F4EB1E1281EA00928D86 /* Manager.m in Sources */,
+				7BEAEF9A1DC3665800C6766E /* test_Protocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
