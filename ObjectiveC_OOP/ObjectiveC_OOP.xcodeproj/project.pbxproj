@@ -24,6 +24,8 @@
 		7B9746D31D42921600882690 /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9746D21D42921600882690 /* Phone.m */; };
 		7B9746D71D42946B00882690 /* test_method.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9746D61D42946B00882690 /* test_method.m */; };
 		7B9746D91D4297E200882690 /* CPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9746D81D4297E200882690 /* CPerson.m */; };
+		7BFE5D801E2503210089C893 /* NewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE5D7F1E2503210089C893 /* NewClass.m */; };
+		7BFE5D821E250BB40089C893 /* testObject_Class_Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE5D811E250BB40089C893 /* testObject_Class_Methods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +75,10 @@
 		7B9746D61D42946B00882690 /* test_method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test_method.m; path = OOP/test_method.m; sourceTree = "<group>"; };
 		7B9746D81D4297E200882690 /* CPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPerson.m; path = OOP/CPerson.m; sourceTree = "<group>"; };
 		7B9746DA1D4297F700882690 /* CPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPerson.h; path = OOP/CPerson.h; sourceTree = "<group>"; };
+		7BFE5D7E1E25030B0089C893 /* NewClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewClass.h; path = methods/NewClass.h; sourceTree = "<group>"; };
+		7BFE5D7F1E2503210089C893 /* NewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewClass.m; path = methods/NewClass.m; sourceTree = "<group>"; };
+		7BFE5D811E250BB40089C893 /* testObject_Class_Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testObject_Class_Methods.m; path = methods/testObject_Class_Methods.m; sourceTree = "<group>"; };
+		7BFE5D831E250BD70089C893 /* testObject_Class_Methods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = testObject_Class_Methods.h; path = methods/testObject_Class_Methods.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		7B3894A41D3646A600478824 /* ObjectiveC_OOP */ = {
 			isa = PBXGroup;
 			children = (
+				7BFE5D7D1E2502D30089C893 /* methods */,
 				7B3894CA1D36856800478824 /* OOP */,
 				7B3894A51D3646A600478824 /* main.m */,
 				7B3894AF1D3648F000478824 /* Student.h */,
@@ -148,6 +155,17 @@
 				7B9746DA1D4297F700882690 /* CPerson.h */,
 			);
 			name = OOP;
+			sourceTree = "<group>";
+		};
+		7BFE5D7D1E2502D30089C893 /* methods */ = {
+			isa = PBXGroup;
+			children = (
+				7BFE5D7E1E25030B0089C893 /* NewClass.h */,
+				7BFE5D7F1E2503210089C893 /* NewClass.m */,
+				7BFE5D811E250BB40089C893 /* testObject_Class_Methods.m */,
+				7BFE5D831E250BD70089C893 /* testObject_Class_Methods.h */,
+			);
+			name = methods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +235,13 @@
 				7B3894C31D366EF900478824 /* Dog.m in Sources */,
 				7B9746D71D42946B00882690 /* test_method.m in Sources */,
 				7B3894C61D366F6500478824 /* Cat.m in Sources */,
+				7BFE5D801E2503210089C893 /* NewClass.m in Sources */,
 				7B3894B71D364FBC00478824 /* test.m in Sources */,
 				7B3894B91D364FE900478824 /* use_class_object.m in Sources */,
 				7B3894C01D366EB400478824 /* Animal.m in Sources */,
 				7B3894A61D3646A600478824 /* main.m in Sources */,
 				7B3894CF1D36884E00478824 /* test_OOP.m in Sources */,
+				7BFE5D821E250BB40089C893 /* testObject_Class_Methods.m in Sources */,
 				7B3894B11D3648F000478824 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

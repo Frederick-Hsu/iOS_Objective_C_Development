@@ -15,4 +15,6 @@
 
     void testHowToUseClassObject(void);
 
+    void testHowToCallClassObjectMethods(void);
+
 #endif  /* TEST_H */
