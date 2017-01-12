@@ -18,4 +18,6 @@
 
     void judgeAndCompareString(void);
 
+    void stringLookup(void);
+
 #endif  /* STRING_H */

@@ -25,4 +25,10 @@ void testCase4_String(void)
     
     NSLog(@"Judge and compare 2 strings : ");
     judgeAndCompareString();
+    
+    NSLog(@"Lookup the sub-string : ");
+    stringLookup();
+    
+    NSLog(@"Cut out the sub-string from a string : ");
+    cutoutSubstring();
 }
