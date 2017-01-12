@@ -1,8 +1,8 @@
 /**************************************************************************************************
- * File name    : test.h
- * Description  : Declare, implement and perform the project test cases here.
+ * File nae     : test.h
+ * Description  : Declare and perform all the test cases for current project.
  * Creator      : Frederick Hsu
- * Creation date: Wed.  13 July, 2016
+ * Creation date: Sun.  24 JULY, 2016
  * Copyright(C) 2016    All rights reserved.
  *
  **************************************************************************************************/
@@ -13,8 +13,9 @@
 
     void performProjectTestCases(void);
 
-    void testHowToUseClassObject(void);
-
-    void testHowToCallClassObjectMethods(void);
+    void performTestCases4MemoryManagement(void);
+    void performTestCases4Category(void);
+    void performTestCase4Protocol(void);
+    void performTestCase4Delegate(void);
 
 #endif  /* TEST_H */
