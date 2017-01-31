@@ -20,4 +20,8 @@
 
     void stringLookup(void);
 
+    void cutoutSubstring(void);
+
+    void operationOnNSMutableString(void);
+
 #endif  /* STRING_H */

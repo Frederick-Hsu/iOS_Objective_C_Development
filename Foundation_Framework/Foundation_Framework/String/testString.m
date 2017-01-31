@@ -31,4 +31,7 @@ void testCase4_String(void)
     
     NSLog(@"Cut out the sub-string from a string : ");
     cutoutSubstring();
+    
+    NSLog(@"Verify the mutable string operation :");
+    operationOnNSMutableString();
 }
