@@ -11,5 +11,7 @@
 #define ARRAY_H
 
     void createArray(void);
+    void dynamicArrayAndOperations(void);
+    void operationsOnDynamicArray(void);
 
 #endif  /* ARRAY_H */

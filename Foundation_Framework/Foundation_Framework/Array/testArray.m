@@ -14,6 +14,15 @@
 
 void testCase4_Array(void)
 {
+    NSLog(@"\n\n");
     NSLog(@"Verify how to create the the array consisted of NSArray objects.");
     createArray();
+    
+    NSLog(@"\n\n");
+    NSLog(@"Verify the mutable array of various kinds of objects :");
+    dynamicArrayAndOperations();
+    
+    NSLog(@"\n\n");
+    NSLog(@"and its operations : ");
+    operationsOnDynamicArray();
 }
