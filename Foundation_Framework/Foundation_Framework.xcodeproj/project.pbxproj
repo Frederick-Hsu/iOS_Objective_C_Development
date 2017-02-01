@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5AEA801E4197C0004A32E0 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA7F1E4197C0004A32E0 /* Array.m */; };
+		7B5AEA831E41BBF6004A32E0 /* testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA821E41BBF6004A32E0 /* testArray.m */; };
+		7B5AEA881E4204F7004A32E0 /* Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA851E4204F7004A32E0 /* Dictionary.m */; };
+		7B5AEA891E4204F7004A32E0 /* testDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA871E4204F7004A32E0 /* testDictionary.m */; };
 		7B86F7851E13D22C00BAD8DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B86F7841E13D22C00BAD8DD /* main.m */; };
 		7B86F7911E13D5AD00BAD8DD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B86F7901E13D5AD00BAD8DD /* test.m */; };
 		7B86F7941E13D72B00BAD8DD /* String.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B86F7931E13D72B00BAD8DD /* String.m */; };
@@ -26,6 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B5AEA7E1E4197C0004A32E0 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Array/Array.h; sourceTree = "<group>"; };
+		7B5AEA7F1E4197C0004A32E0 /* Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Array.m; path = Array/Array.m; sourceTree = "<group>"; };
+		7B5AEA811E41BBF6004A32E0 /* testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testArray.h; path = Array/testArray.h; sourceTree = "<group>"; };
+		7B5AEA821E41BBF6004A32E0 /* testArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testArray.m; path = Array/testArray.m; sourceTree = "<group>"; };
+		7B5AEA841E4204F7004A32E0 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dictionary.h; path = Dictionary/Dictionary.h; sourceTree = "<group>"; };
+		7B5AEA851E4204F7004A32E0 /* Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dictionary.m; path = Dictionary/Dictionary.m; sourceTree = "<group>"; };
+		7B5AEA861E4204F7004A32E0 /* testDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testDictionary.h; path = Dictionary/testDictionary.h; sourceTree = "<group>"; };
+		7B5AEA871E4204F7004A32E0 /* testDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testDictionary.m; path = Dictionary/testDictionary.m; sourceTree = "<group>"; };
 		7B86F7811E13D22C00BAD8DD /* Foundation_Framework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Foundation_Framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B86F7841E13D22C00BAD8DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B86F78F1E13D5AD00BAD8DD /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
@@ -91,6 +103,10 @@
 		7B86F78C1E13D4C900BAD8DD /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				7B5AEA811E41BBF6004A32E0 /* testArray.h */,
+				7B5AEA821E41BBF6004A32E0 /* testArray.m */,
+				7B5AEA7E1E4197C0004A32E0 /* Array.h */,
+				7B5AEA7F1E4197C0004A32E0 /* Array.m */,
 			);
 			name = Array;
 			sourceTree = "<group>";
@@ -98,6 +114,10 @@
 		7B86F78D1E13D4DE00BAD8DD /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				7B5AEA841E4204F7004A32E0 /* Dictionary.h */,
+				7B5AEA851E4204F7004A32E0 /* Dictionary.m */,
+				7B5AEA861E4204F7004A32E0 /* testDictionary.h */,
+				7B5AEA871E4204F7004A32E0 /* testDictionary.m */,
 			);
 			name = Dictionary;
 			sourceTree = "<group>";
@@ -167,7 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B86F7941E13D72B00BAD8DD /* String.m in Sources */,
+				7B5AEA891E4204F7004A32E0 /* testDictionary.m in Sources */,
 				7B86F7851E13D22C00BAD8DD /* main.m in Sources */,
+				7B5AEA801E4197C0004A32E0 /* Array.m in Sources */,
+				7B5AEA881E4204F7004A32E0 /* Dictionary.m in Sources */,
+				7B5AEA831E41BBF6004A32E0 /* testArray.m in Sources */,
 				7B86F7971E13D7FB00BAD8DD /* testString.m in Sources */,
 				7B86F7911E13D5AD00BAD8DD /* test.m in Sources */,
 			);
@@ -296,6 +320,7 @@
 				7B86F78A1E13D22C00BAD8DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

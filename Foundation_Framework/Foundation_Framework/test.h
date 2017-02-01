@@ -13,5 +13,6 @@
     void performTestCases(void);
 
     void performTestCases4StringModule(void);
+    void performTestCases4ArrayModule(void);
 
 #endif  /* TEST_H */

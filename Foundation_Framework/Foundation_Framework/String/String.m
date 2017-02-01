@@ -11,6 +11,10 @@
 
 #import <Foundation/Foundation.h>
 
+/*START*********************************************************************************************
+ * NSString
+ */
+
 void initializeString(void)
 {
     int year = 10;
@@ -120,7 +124,6 @@ void stringLookup(void)
 }
 
 void cutoutSubstring(void)
-
 {
     NSString *sentence = @"Although it rains, throw not away your watering pot.  纵然天下雨，休把水壶丢。";
     
@@ -138,3 +141,43 @@ void cutoutSubstring(void)
     
     return;
 }
+
+/*END***********************************************************************************************
+ */
+
+
+/*START*********************************************************************************************
+ * NSMutableString
+ */
+
+void operationOnNSMutableString(void)
+{
+    /* NSMutableString append the string */
+    NSMutableString *mStr = [NSMutableString string];
+    [mStr appendString:@"Now we start to learn the NSMutableString class, "];
+    [mStr appendString:@"and its various operations."];
+    [mStr appendFormat:@"Shanghai Jiao Tong University celebrated its %d anniversary in 2016.", 120];
+    NSLog(@"The string is : %@", mStr);
+    
+    /* NSMutableString delete the sub-string */
+    NSMutableString *myMutableStr = [NSMutableString stringWithFormat:@"Alice Yu, I love you."];
+    NSLog(@"The original string is : %@", myMutableStr);
+    [myMutableStr deleteCharactersInRange:[myMutableStr rangeOfString:@"Alice Yu,"]];
+    NSLog(@"After removed an fragement, now the string is : %@", myMutableStr);
+    
+    /* NSMutableString insert a string fragment */
+    NSMutableString *Str = [NSMutableString stringWithFormat:@"北京欢迎您"];
+    [Str insertString:@"传智播客" atIndex:2];
+    NSLog(@"Current string is : %@", Str);
+    
+    /* NSMutableString replace a sub-string fragment */
+    NSMutableString *myStr = [NSMutableString string];
+    myStr.string = @"北京欢迎您";
+    [myStr replaceCharactersInRange:[myStr rangeOfString:@"北京"] withString:@"传智播客"];
+    NSLog(@"After replacement, the new string is : %@", myStr);
+    
+    return;
+}
+
+/*END***********************************************************************************************
+ */
