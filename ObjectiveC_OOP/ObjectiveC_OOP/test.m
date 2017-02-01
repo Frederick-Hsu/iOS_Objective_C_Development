@@ -12,12 +12,15 @@
 #import "use_class_object.h"
 #import "test_Encapsulation_Inheritance_Polymorphism.h"
 #import "OOP/test_OOP.h"
+#import "methods/testObject_Class_Methods.h"
 
 void performProjectTestCases(void)
 {
     testHowToUseClassObject();
     verifyOOP3Features();
     testOOPImportantFeatures();
+    
+    testHowToCallClassObjectMethods();
 }
 
 void testHowToUseClassObject(void)
@@ -27,4 +30,9 @@ void testHowToUseClassObject(void)
     testSetterAndGetterMethods();
     testPropertyOfObjectiveC();
     testMethodOfObjectiveC();
+}
+
+void testHowToCallClassObjectMethods(void)
+{
+    testCase4_HowToCallObjectClassMethods();
 }
