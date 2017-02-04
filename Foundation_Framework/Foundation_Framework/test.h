@@ -14,5 +14,6 @@
 
     void performTestCases4StringModule(void);
     void performTestCases4ArrayModule(void);
+    void performTestCases4DictionaryModule(void);
 
 #endif  /* TEST_H */

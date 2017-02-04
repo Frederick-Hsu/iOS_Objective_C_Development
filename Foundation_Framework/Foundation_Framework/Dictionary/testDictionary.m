@@ -11,3 +11,11 @@
 #import "testDictionary.h"
 #import "Dictionary.h"
 
+#import <Foundation/Foundation.h>
+
+void testCase4_Dictionary(void)
+{
+    NSLog(@"\n\n");
+    NSLog(@"Verify how to initialize and create a dictionary : ");
+    initializeCreateDict();
+}
