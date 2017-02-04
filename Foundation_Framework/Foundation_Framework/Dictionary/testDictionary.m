@@ -18,4 +18,8 @@ void testCase4_Dictionary(void)
     NSLog(@"\n\n");
     NSLog(@"Verify how to initialize and create a dictionary : ");
     initializeCreateDict();
+    
+    NSLog(@"\n\n");
+    NSLog(@"How to retrieve the value according to the key user specified : ");
+    retrieveDictValueByKey();
 }
