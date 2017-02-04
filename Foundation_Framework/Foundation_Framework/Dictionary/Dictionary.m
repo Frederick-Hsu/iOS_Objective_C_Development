@@ -37,3 +37,25 @@ void initializeCreateDict(void)
     
     return;
 }
+
+void retrieveDictValueByKey(void)
+{
+    NSDictionary *dict = @{@"Name"      : @"Frederick Hsu",
+                           @"Age"       : @"34",
+                           @"Gender"    : @"Male",
+                           @"Company"   : @"Shanghai Amphenol Airwave",
+                           @"College"   : @"Shanghai Jiao Tong University"};
+    id valueObj = dict[@"Age"];
+    NSLog(@"The key 'Age' corresponding to value '%@'", valueObj);
+    
+    id dictValueObj = [dict objectForKey:@"College"];
+    NSLog(@"The value of key 'College' is : %@", dictValueObj);
+    
+    /* 对字典中的的键进行遍历，获取其键值对 */
+    for (NSString *key in dict)
+    {
+        NSLog(@"Key : '%@' = Value : '%@'", key, dict[key]);
+    }
+    
+    return;
+}

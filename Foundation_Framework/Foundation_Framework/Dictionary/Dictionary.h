@@ -11,5 +11,6 @@
 #define DICTIONARY_H
 
     void initializeCreateDict(void);
+    void retrieveDictValueByKey(void);
 
 #endif  /* DICTIONARY_H */
