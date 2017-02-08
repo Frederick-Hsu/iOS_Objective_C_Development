@@ -13,4 +13,6 @@
     void initializeCreateDict(void);
     void retrieveDictValueByKey(void);
 
+    void changeMutableDictionary(void);
+
 #endif  /* DICTIONARY_H */

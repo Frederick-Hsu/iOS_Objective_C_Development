@@ -59,3 +59,36 @@ void retrieveDictValueByKey(void)
     
     return;
 }
+
+void changeMutableDictionary(void)
+{
+    /* Create a new mutable dict */
+    NSMutableDictionary *weathers = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Cloudy",    @"Monday",
+                                                                                      @"Sunny",     @"Tuesday",
+                                                                                      @"Haze",      @"Friday",
+                                                                                      @"Rainy",     @"Sunday", nil];
+    NSLog(@"The key-value pairs in this mutable dictionary are : ");
+    for (NSString *key in weathers)
+    {
+        NSLog(@"Key : %@ = Value : %@", key, weathers[key]);
+    }
+    
+    /* Change the elements in the weathers dict. */
+    NSLog(@"After change and add movement, the key-value pairs in the weathers dict. are : ");
+    [weathers setObject:@"Snowy" forKey:@"Monday"];
+    [weathers setObject:@"Windy" forKey:@"Wednesday"];
+    for (NSObject *key in weathers)
+    {
+        NSLog(@"Key : %@ = Value : %@", key, weathers[key]);
+    }
+    
+    /* Remove the elements from the weathers dict. */
+    [weathers removeObjectForKey:@"Tuesday"];
+    NSLog(@"After removal, the key-value pairs are : ");
+    for (NSString *key in weathers)
+    {
+        NSLog(@"Key : %@ = Value : %@", key, weathers[key]);
+    }
+    
+    return;
+}
