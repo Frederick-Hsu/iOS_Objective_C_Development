@@ -11,5 +11,6 @@
 #define NUMBER_H
 
     void initAndCreateNumberObj(void);
+    void castTypeForNumberObjects(void);
 
 #endif  /* NUMBER_H */

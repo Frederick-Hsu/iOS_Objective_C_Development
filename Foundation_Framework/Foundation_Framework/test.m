@@ -18,7 +18,8 @@ void performTestCases(void)
 {
     // performTestCases4StringModule();
     // performTestCases4ArrayModule();
-    performTestCases4DictionaryModule();
+    // performTestCases4DictionaryModule();
+    performTestCase4NumberModule();
 }
 
 void performTestCases4StringModule(void)

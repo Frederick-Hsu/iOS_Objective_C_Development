@@ -10,6 +10,13 @@
 #import "testNumber.h"
 #import "Number.h"
 
+#import <Foundation/Foundation.h>
+
 void testCase4_Number(void)
 {
+    NSLog(@"\n\n");
+    NSLog(@"Study the NSNumber class of objects and their operations :");
+    initAndCreateNumberObj();
+    
+    castTypeForNumberObjects();
 }
