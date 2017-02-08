@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B49AD851E4B3F3600128543 /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49AD821E4B3F3600128543 /* Number.m */; };
+		7B49AD861E4B3F3600128543 /* testNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49AD841E4B3F3600128543 /* testNumber.m */; };
 		7B5AEA801E4197C0004A32E0 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA7F1E4197C0004A32E0 /* Array.m */; };
 		7B5AEA831E41BBF6004A32E0 /* testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA821E41BBF6004A32E0 /* testArray.m */; };
 		7B5AEA881E4204F7004A32E0 /* Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AEA851E4204F7004A32E0 /* Dictionary.m */; };
@@ -30,6 +32,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B49AD811E4B3F3600128543 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Number.h; path = Number/Number.h; sourceTree = "<group>"; };
+		7B49AD821E4B3F3600128543 /* Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Number.m; path = Number/Number.m; sourceTree = "<group>"; };
+		7B49AD831E4B3F3600128543 /* testNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testNumber.h; path = Number/testNumber.h; sourceTree = "<group>"; };
+		7B49AD841E4B3F3600128543 /* testNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testNumber.m; path = Number/testNumber.m; sourceTree = "<group>"; };
 		7B5AEA7E1E4197C0004A32E0 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Array/Array.h; sourceTree = "<group>"; };
 		7B5AEA7F1E4197C0004A32E0 /* Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Array.m; path = Array/Array.m; sourceTree = "<group>"; };
 		7B5AEA811E41BBF6004A32E0 /* testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testArray.h; path = Array/testArray.h; sourceTree = "<group>"; };
@@ -125,6 +131,10 @@
 		7B86F78E1E13D4F900BAD8DD /* Number */ = {
 			isa = PBXGroup;
 			children = (
+				7B49AD811E4B3F3600128543 /* Number.h */,
+				7B49AD821E4B3F3600128543 /* Number.m */,
+				7B49AD831E4B3F3600128543 /* testNumber.h */,
+				7B49AD841E4B3F3600128543 /* testNumber.m */,
 			);
 			name = Number;
 			sourceTree = "<group>";
@@ -190,9 +200,11 @@
 				7B5AEA891E4204F7004A32E0 /* testDictionary.m in Sources */,
 				7B86F7851E13D22C00BAD8DD /* main.m in Sources */,
 				7B5AEA801E4197C0004A32E0 /* Array.m in Sources */,
+				7B49AD861E4B3F3600128543 /* testNumber.m in Sources */,
 				7B5AEA881E4204F7004A32E0 /* Dictionary.m in Sources */,
 				7B5AEA831E41BBF6004A32E0 /* testArray.m in Sources */,
 				7B86F7971E13D7FB00BAD8DD /* testString.m in Sources */,
+				7B49AD851E4B3F3600128543 /* Number.m in Sources */,
 				7B86F7911E13D5AD00BAD8DD /* test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

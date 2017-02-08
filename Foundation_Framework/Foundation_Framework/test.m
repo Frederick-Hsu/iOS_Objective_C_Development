@@ -12,6 +12,7 @@
 #import "String/testString.h"
 #import "Array/testArray.h"
 #import "Dictionary/testDictionary.h"
+#import "Number/testNumber.h"
 
 void performTestCases(void)
 {
@@ -34,4 +35,9 @@ void performTestCases4ArrayModule(void)
 void performTestCases4DictionaryModule(void)
 {
     testCase4_Dictionary();
+}
+
+void performTestCase4NumberModule(void)
+{
+    testCase4_Number();
 }
