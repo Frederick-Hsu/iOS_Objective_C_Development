@@ -11,3 +11,19 @@
 #import "testDictionary.h"
 #import "Dictionary.h"
 
+#import <Foundation/Foundation.h>
+
+void testCase4_Dictionary(void)
+{
+    NSLog(@"\n\n");
+    NSLog(@"Verify how to initialize and create a dictionary : ");
+    initializeCreateDict();
+    
+    NSLog(@"\n\n");
+    NSLog(@"How to retrieve the value according to the key user specified : ");
+    retrieveDictValueByKey();
+    
+    NSLog(@"\n\n");
+    NSLog(@"Study how to change the mutable dictionary : ");
+    changeMutableDictionary();
+}

@@ -11,6 +11,6 @@
 #ifndef TEST_DICTIONARY_H
 #define TEST_DICTIONARY_H
 
-
+    void testCase4_Dictionary(void);
 
 #endif  /* TEST_DICTIONARY_H */

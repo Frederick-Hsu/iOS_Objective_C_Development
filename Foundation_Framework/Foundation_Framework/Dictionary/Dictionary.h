@@ -10,5 +10,9 @@
 #ifndef DICTIONARY_H
 #define DICTIONARY_H
 
+    void initializeCreateDict(void);
+    void retrieveDictValueByKey(void);
+
+    void changeMutableDictionary(void);
 
 #endif  /* DICTIONARY_H */
