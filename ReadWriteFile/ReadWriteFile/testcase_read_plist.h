@@ -10,5 +10,6 @@
 #ifndef TESTCASE_READ_PLIST_H
 #define TESTCASE_READ_PLIST_H
 
+    void testCase4_Read_plist(void);
 
 #endif  /* TESTCASE_READ_PLIST_H */

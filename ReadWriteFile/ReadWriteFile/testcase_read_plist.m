@@ -8,3 +8,12 @@
  **************************************************************************************************/
 
 #import "testcase_read_plist.h"
+#import "read_plist.h"
+
+#import <Foundation/Foundation.h>
+
+void testCase4_Read_plist(void)
+{
+    NSLog(@"Study how to read the plist file in Objective-C programming : ");
+    readPropertyListFileWithMutableDict();
+}

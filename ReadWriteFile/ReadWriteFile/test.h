@@ -10,6 +10,7 @@
 #ifndef TEST_H
 #define TEST_H
 
-
+    void executeTestCases(void);
+    void executeTestCase4_Read_plist(void);
 
 #endif  /* TEST_H */

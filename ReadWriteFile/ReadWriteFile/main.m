@@ -17,5 +17,8 @@
 
 int main(int argc, char *argv[])
 {
+    executeTestCases();
+    
+/*******************************/
     return EXIT_SUCCESS;
 }

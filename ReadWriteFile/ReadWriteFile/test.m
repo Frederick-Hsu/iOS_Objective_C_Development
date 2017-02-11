@@ -8,3 +8,14 @@
  **************************************************************************************************/
 
 #import "test.h"
+#import "testcase_read_plist.h"
+
+void executeTestCases(void)
+{
+    executeTestCase4_Read_plist();
+}
+
+void executeTestCase4_Read_plist(void)
+{
+    testCase4_Read_plist();
+}
