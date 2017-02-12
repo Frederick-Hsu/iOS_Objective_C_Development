@@ -13,5 +13,6 @@
     void executeTestCases(void);
     void executeTestCase4_Read_plist(void);
     void executeTestCase4_Write_plist(void);
+    void executeTestCase4_NSFileManager(void);
 
 #endif  /* TEST_H */
