@@ -17,3 +17,9 @@ void testCase4_Read_plist(void)
     NSLog(@"Study how to read the plist file in Objective-C programming : ");
     readPropertyListFileWithMutableDict();
 }
+
+void testCase4_Write_plist(void)
+{
+    NSLog(@"Study how to write the plist file in Objective-C programming : ");
+    writePropertyListFileOverMutableDict();
+}

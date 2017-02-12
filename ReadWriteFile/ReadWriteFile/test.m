@@ -13,9 +13,15 @@
 void executeTestCases(void)
 {
     executeTestCase4_Read_plist();
+    executeTestCase4_Write_plist();
 }
 
 void executeTestCase4_Read_plist(void)
 {
     testCase4_Read_plist();
+}
+
+void executeTestCase4_Write_plist(void)
+{
+    testCase4_Write_plist();
 }

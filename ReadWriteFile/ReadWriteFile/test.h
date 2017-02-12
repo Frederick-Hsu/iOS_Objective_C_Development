@@ -12,5 +12,6 @@
 
     void executeTestCases(void);
     void executeTestCase4_Read_plist(void);
+    void executeTestCase4_Write_plist(void);
 
 #endif  /* TEST_H */

@@ -11,5 +11,6 @@
 #define TESTCASE_READ_WRITE_PLIST_H
 
     void testCase4_Read_plist(void);
+    void testCase4_Write_plist(void);
 
 #endif  /* TESTCASE_READ_WRITE_PLIST_H */
