@@ -9,11 +9,14 @@
 
 #import "test.h"
 #import "testcase_read_write_plist.h"
+#import "NSFileManager/test_file_directory_management.h"
 
 void executeTestCases(void)
 {
     executeTestCase4_Read_plist();
     executeTestCase4_Write_plist();
+    
+    executeTestCase4_NSFileManager();
 }
 
 void executeTestCase4_Read_plist(void)
@@ -24,4 +27,9 @@ void executeTestCase4_Read_plist(void)
 void executeTestCase4_Write_plist(void)
 {
     testCase4_Write_plist();
+}
+
+void executeTestCase4_NSFileManager(void)
+{
+    testCase4_FileDirManagement();
 }
