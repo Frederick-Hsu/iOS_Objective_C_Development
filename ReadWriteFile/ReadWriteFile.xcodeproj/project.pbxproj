@@ -50,6 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B288C7D1E50518000AE4FE6 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NSFileManager;
+			sourceTree = "<group>";
+		};
 		7B49AD871E4B4FE200128543 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +76,7 @@
 		7B49AD921E4B4FE200128543 /* ReadWriteFile */ = {
 			isa = PBXGroup;
 			children = (
+				7B288C7D1E50518000AE4FE6 /* NSFileManager */,
 				7B288C7C1E504E9F00AE4FE6 /* array.plist */,
 				7B49AD931E4B4FE200128543 /* main.m */,
 				7B258C621E4F102900CEA755 /* Student.plist */,
