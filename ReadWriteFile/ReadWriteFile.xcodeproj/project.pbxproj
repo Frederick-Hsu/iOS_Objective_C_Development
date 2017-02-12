@@ -35,6 +35,7 @@
 		7B258C6B1E4F129F00CEA755 /* testcase_read_write_plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testcase_read_write_plist.h; sourceTree = "<group>"; };
 		7B49AD901E4B4FE200128543 /* ReadWriteFile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReadWriteFile; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B49AD931E4B4FE200128543 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B8FFE081E5045A400F86B8C /* Person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Person.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				7B258C671E4F123B00CEA755 /* test.m */,
 				7B258C691E4F128C00CEA755 /* testcase_read_write_plist.m */,
 				7B258C6B1E4F129F00CEA755 /* testcase_read_write_plist.h */,
+				7B8FFE081E5045A400F86B8C /* Person.plist */,
 			);
 			path = ReadWriteFile;
 			sourceTree = "<group>";

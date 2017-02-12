@@ -17,3 +17,15 @@ void readPropertyListFileWithMutableDict(void)
     
     NSLog(@"Display the elements of plist file : %@", dict_plist);
 }
+
+void writePropertyListFileOverMutableDict(void)
+{
+    /* Specify the location of a plist file */
+    NSString *plist_path = @"/Users/frederick_hsu/Programming/Objective_C_Programming/ReadWriteFile/ReadWriteFile/Person.plist";
+    
+    /* Create a dict object */
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:@"Tom" forKey:@"Name"];
+    [dict setObject:@"8" forKey:@"Age"];
+    [dict writeToFile:plist_path atomically:YES];
+}
