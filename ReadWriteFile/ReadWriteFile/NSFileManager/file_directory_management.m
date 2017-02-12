@@ -109,3 +109,26 @@ void deleteFileAtPath(void)
         }
     }
 }
+
+void moveFileAtPath(void)
+{
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    
+    NSString *srcFile  = @"/Users/frederick_hsu/Programming/Objective_C_Programming/ReadWriteFile/ReadWriteFile/student",
+             *destFile = @"/Users/frederick_hsu/Programming/Objective_C_Programming/ReadWriteFile/ReadWriteFile/NSFileManager/student";
+    
+    if ([fileMgr fileExistsAtPath:srcFile])
+    {
+        /* Move the file to user-specified directory */
+        [fileMgr moveItemAtPath:srcFile toPath:destFile error:nil];
+        
+        if ([fileMgr fileExistsAtPath:destFile])
+        {
+            NSLog(@"Your file had already been there. Don't worry!");
+        }
+        else
+        {
+            NSLog(@"OMG! Your file file had missed.");
+        }
+    }
+}

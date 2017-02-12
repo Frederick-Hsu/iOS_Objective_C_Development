@@ -14,5 +14,6 @@
     void createFilePath(void);
     void copyFileAtPath(void);
     void deleteFileAtPath(void);
+    void moveFileAtPath(void);
 
 #endif  /* FILE_DIRECTORY_MANAGEMENT_H */
