@@ -8,7 +8,7 @@
  **************************************************************************************************/
 
 #import "test.h"
-#import "testcase_read_plist.h"
+#import "testcase_read_write_plist.h"
 
 void executeTestCases(void)
 {
