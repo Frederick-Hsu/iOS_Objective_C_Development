@@ -1,5 +1,5 @@
 /**************************************************************************************************
- * File name    : testcase_read_plist.m
+ * File name    : testcase_read_write_plist.m
  * Description  : Design test cases for reading the plist file.
  * Creator      : Frederick Hsu
  * Creation date: Sat.  11 Feb. 2017
@@ -7,8 +7,8 @@
  *
  **************************************************************************************************/
 
-#import "testcase_read_plist.h"
-#import "read_plist.h"
+#import "testcase_read_write_plist.h"
+#import "read_write_plist.h"
 
 #import <Foundation/Foundation.h>
 
