@@ -13,4 +13,6 @@
     void readPropertyListFileWithMutableDict(void);
     void writePropertyListFileOverMutableDict(void);
 
+    void writePropertyListFileOverStringOrArrayDict(void);
+
 #endif  /* READ_WRITE_PLIST_H */

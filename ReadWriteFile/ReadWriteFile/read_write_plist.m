@@ -29,3 +29,17 @@ void writePropertyListFileOverMutableDict(void)
     [dict setObject:@"8" forKey:@"Age"];
     [dict writeToFile:plist_path atomically:YES];
 }
+
+void writePropertyListFileOverStringOrArrayDict(void)
+{
+    NSMutableArray *plist_array = [NSMutableArray arrayWithObjects:@"One", @"Two", @"Name", @"School", @"Age", @"Information", nil];
+    NSString *plist_path_string = @"/Users/frederick_hsu/Programming/Objective_C_Programming/ReadWriteFile/ReadWriteFile/array.plist";
+    
+    [plist_array writeToFile:plist_path_string atomically:YES];
+    
+    NSMutableArray *arrayInfo = [NSMutableArray arrayWithContentsOfFile:plist_path_string];
+    for (NSObject *obj in arrayInfo)
+    {
+        NSLog(@"%@", obj);
+    }
+}

@@ -33,6 +33,7 @@
 		7B258C671E4F123B00CEA755 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		7B258C691E4F128C00CEA755 /* testcase_read_write_plist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testcase_read_write_plist.m; sourceTree = "<group>"; };
 		7B258C6B1E4F129F00CEA755 /* testcase_read_write_plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testcase_read_write_plist.h; sourceTree = "<group>"; };
+		7B288C7C1E504E9F00AE4FE6 /* array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = array.plist; sourceTree = "<group>"; };
 		7B49AD901E4B4FE200128543 /* ReadWriteFile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReadWriteFile; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B49AD931E4B4FE200128543 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B8FFE081E5045A400F86B8C /* Person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Person.plist; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		7B49AD921E4B4FE200128543 /* ReadWriteFile */ = {
 			isa = PBXGroup;
 			children = (
+				7B288C7C1E504E9F00AE4FE6 /* array.plist */,
 				7B49AD931E4B4FE200128543 /* main.m */,
 				7B258C621E4F102900CEA755 /* Student.plist */,
 				7B258C631E4F120A00CEA755 /* read_write_plist.m */,

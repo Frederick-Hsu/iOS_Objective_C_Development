@@ -22,4 +22,6 @@ void testCase4_Write_plist(void)
 {
     NSLog(@"Study how to write the plist file in Objective-C programming : ");
     writePropertyListFileOverMutableDict();
+    
+    writePropertyListFileOverStringOrArrayDict();
 }
