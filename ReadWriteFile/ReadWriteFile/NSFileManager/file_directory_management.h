@@ -11,5 +11,8 @@
 #define FILE_DIRECTORY_MANAGEMENT_H
 
     void createAndRetrievePath(void);
+    void createFilePath(void);
+    void copyFileAtPath(void);
+    void deleteFileAtPath(void);
 
 #endif  /* FILE_DIRECTORY_MANAGEMENT_H */
