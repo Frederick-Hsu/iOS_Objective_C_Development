@@ -12,6 +12,11 @@
 
 @interface ViewController : UIViewController
 
+    @property (weak, nonatomic) IBOutlet UITextField *num1Text;
+    @property (weak, nonatomic) IBOutlet UITextField *num2Text;
+    @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+
+    - (IBAction)computerClick;
 
 @end
 
