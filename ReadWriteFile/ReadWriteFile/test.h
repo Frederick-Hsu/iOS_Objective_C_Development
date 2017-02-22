@@ -1,20 +1,18 @@
 /**************************************************************************************************
  * File name    : test.h
- * Description  : Declare, implement and perform the project test cases here.
+ * Description  : Execute the test cases for current project.
  * Creator      : Frederick Hsu
- * Creation date: Wed.  13 July, 2016
- * Copyright(C) 2016    All rights reserved.
+ * Creation date: Sat.  11 Feb. 2017
+ * Copyright(C) 2017    All rights reserved.
  *
  **************************************************************************************************/
-
 
 #ifndef TEST_H
 #define TEST_H
 
-    void performProjectTestCases(void);
-
-    void testHowToUseClassObject(void);
-
-    void testHowToCallClassObjectMethods(void);
+    void executeTestCases(void);
+    void executeTestCase4_Read_plist(void);
+    void executeTestCase4_Write_plist(void);
+    void executeTestCase4_NSFileManager(void);
 
 #endif  /* TEST_H */
