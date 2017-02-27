@@ -64,6 +64,34 @@ int tip = 0;
         [super viewDidLoad];
         /* Do any additional setup after loading the view, typically from a nib. */
         NSLog(@"%d viewDidLoad", tip++);
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 280, 100)];
+        
+        // Set the label caption
+        label.text = @"Hello, world. It is a good idea, so what do you want to know?";
+        label.backgroundColor = [UIColor redColor];     // Set the color of background
+        label.font = [UIFont systemFontOfSize:23];      // Set the font size
+        label.textColor = [UIColor whiteColor];         // Set the color of text in the label
+        label.textAlignment = NSTextAlignmentCenter;    // Set the alignment : Center
+        label.shadowColor = [UIColor greenColor];       // Set the shadow color
+        // label.shadowOffset = CGSizeMake(10, 10);        // Set the offset for shadow.
+        label.numberOfLines = 0;                        // Allow to wrap the long text line.
+        label.lineBreakMode = NSLineBreakByWordWrapping;
+                              // NSLineBreakByCharWrapping;
+        
+        [self.view addSubview:label];
+        
+    /**********************************************************************************************/
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        button.frame = CGRectMake(100, 400, 240, 30);
+        button.backgroundColor = [UIColor blueColor];
+        [button setTitle:@"Click me" forState:UIControlStateNormal];
+        [button addTarget:self
+                   action:@selector(changeColor)
+         forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view addSubview:button];
     }
 
     - (void)viewWillLayoutSubviews
@@ -112,6 +140,14 @@ int tip = 0;
     - (void)dealloc
     {
         NSLog(@"%d dealloc", tip++);
+    }
+
+    - (void)changeColor
+    {
+        self.view.backgroundColor = [UIColor colorWithRed:arc4random()%0xFF/255.0
+                                                    green:arc4random()%0xFF/255.0
+                                                     blue:arc4random()%0xFF/255.0
+                                                    alpha:1];
     }
 
 @end

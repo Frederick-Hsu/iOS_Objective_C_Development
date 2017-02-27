@@ -21,10 +21,12 @@
     - (void)viewDidLayoutSubviews;
     - (void)didReceiveMemoryWarning;
     - (void)viewDidAppear:(BOOL)animated;
-    - (void)viewWilAppear:(BOOL)animated;
+    - (void)viewWillAppear:(BOOL)animated;
     - (void)viewWillDisappear:(BOOL)animated;
     - (void)viewDidDisappear:(BOOL)animated;
     - (void)dealloc;
+
+    - (void)changeColor;
 
 @end
 
