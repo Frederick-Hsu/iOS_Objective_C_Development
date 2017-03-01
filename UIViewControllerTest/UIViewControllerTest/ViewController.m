@@ -11,7 +11,7 @@
 
 int tip = 0;
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 
 @end
 
@@ -65,12 +65,12 @@ int tip = 0;
         /* Do any additional setup after loading the view, typically from a nib. */
         NSLog(@"%d viewDidLoad", tip++);
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 280, 100)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 300, 50)];
         
         // Set the label caption
-        label.text = @"Hello, world. It is a good idea, so what do you want to know?";
-        label.backgroundColor = [UIColor redColor];     // Set the color of background
-        label.font = [UIFont systemFontOfSize:23];      // Set the font size
+        label.text = @"Hello, welcome to iOS development world.";
+        label.backgroundColor = [UIColor grayColor];     // Set the color of background
+        label.font = [UIFont systemFontOfSize:15];      // Set the font size
         label.textColor = [UIColor whiteColor];         // Set the color of text in the label
         label.textAlignment = NSTextAlignmentCenter;    // Set the alignment : Center
         label.shadowColor = [UIColor greenColor];       // Set the shadow color
@@ -83,7 +83,8 @@ int tip = 0;
         
     /**********************************************************************************************/
         
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setBackgroundImage:[UIImage imageNamed:@"icon.gif"] forState:UIControlStateNormal];
         button.frame = CGRectMake(100, 400, 240, 30);
         button.backgroundColor = [UIColor blueColor];
         [button setTitle:@"Click me" forState:UIControlStateNormal];
@@ -92,6 +93,46 @@ int tip = 0;
          forControlEvents:UIControlEventTouchUpInside];
         
         [self.view addSubview:button];
+        
+    /**********************************************************************************************/
+        
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 300, 280, 30)];
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        textField.placeholder = @"Please enter your mobile phone number";
+        textField.textColor = [UIColor redColor];
+        textField.font = [UIFont systemFontOfSize:14];
+        textField.textAlignment = NSTextAlignmentLeft;
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image"]];
+        textField.leftView = imageView;
+        textField.leftViewMode = UITextFieldViewModeAlways;
+        
+        textField.delegate = self;
+        
+        [self.view addSubview:textField];
+        
+    /**********************************************************************************************/
+        
+        UISwitch *mySwitch = [[UISwitch alloc] initWithFrame:CGRectMake(200, 150, 800, 20)];
+        _switchOnLabel  = [[UILabel alloc] initWithFrame:CGRectMake(255, 135, 100, 60)];
+        _switchOffLabel = [[UILabel alloc] initWithFrame:CGRectMake(95, 135, 100, 60)];
+        _switchOnLabel.text = @"ON";
+        _switchOffLabel.text = @"OFF";
+        _switchOnLabel.textColor = [UIColor blackColor];
+        _switchOffLabel.textColor = [UIColor blackColor];
+        _switchOffLabel.textAlignment = NSTextAlignmentRight;
+        _switchOnLabel.textAlignment = NSTextAlignmentLeft;
+        
+        mySwitch.onTintColor = [UIColor greenColor];
+        mySwitch.tintColor = [UIColor redColor];
+        mySwitch.thumbTintColor = [UIColor orangeColor];
+        [mySwitch addTarget:self
+                     action:@selector(changeHint:)
+           forControlEvents:(UIControlEventValueChanged)];
+        
+        [self.view addSubview:mySwitch];
+        [self.view addSubview:_switchOnLabel];
+        [self.view addSubview:_switchOffLabel];
     }
 
     - (void)viewWillLayoutSubviews
@@ -148,6 +189,44 @@ int tip = 0;
                                                     green:arc4random()%0xFF/255.0
                                                      blue:arc4random()%0xFF/255.0
                                                     alpha:1];
+    }
+
+    - (void)changeHint:(UISwitch *)userSwitch
+    {
+        if (userSwitch.isOn)
+        {
+            _switchOnLabel.text = @"Switch ON";
+            _switchOnLabel.textColor = [UIColor greenColor];
+            
+            _switchOffLabel.text = @"";
+        }
+        else
+        {
+            _switchOffLabel.text = @"Switch OFF";
+            _switchOffLabel.textColor = [UIColor redColor];
+            
+            _switchOnLabel.text = @"";
+        }
+    }
+
+    - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range
+                                                           replacementString:(NSString *)string
+    {
+        if (string.length > 0)
+        {
+            if (([string characterAtIndex:0] < '0') | ([string characterAtIndex:0] > '9'))
+            {
+                NSLog(@"Please enter digit");
+                return NO;
+            }
+            
+            if (textField.text.length + string.length > 11)
+            {
+                NSLog(@"Exceed 11 digits");
+                return NO;
+            }
+        }
+        return YES;
     }
 
 @end
