@@ -11,6 +11,9 @@
 
 @interface ViewController : UIViewController
 
+    @property (atomic, readwrite) UILabel *switchOnLabel;
+    @property (atomic, readwrite) UILabel *switchOffLabel;
+
     + (void)initialize;
     - (instancetype)init;
     - (instancetype)initWithCoder:(NSCoder *)coder;
@@ -27,6 +30,7 @@
     - (void)dealloc;
 
     - (void)changeColor;
+    - (void)changeHint:(UISwitch *)userSwitch;
 
 @end
 
