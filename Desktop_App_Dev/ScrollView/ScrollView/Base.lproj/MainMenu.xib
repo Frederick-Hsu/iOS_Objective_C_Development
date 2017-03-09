@@ -4207,7 +4207,7 @@ Cg
                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.35874439461883406" horizontal="NO" id="ylX-jM-0wI">
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="ylX-jM-0wI">
                             <rect key="frame" x="437" y="1" width="15" height="289"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
