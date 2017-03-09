@@ -23,6 +23,11 @@
 		7B2B5D531E68394400A1C58B /* potatoBugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B5D4B1E68394400A1C58B /* potatoBugThumb.jpg */; };
 		7B2B5D541E68394400A1C58B /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B5D4C1E68394400A1C58B /* wolfSpider.jpg */; };
 		7B2B5D551E68394400A1C58B /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B5D4D1E68394400A1C58B /* wolfSpiderThumb.jpg */; };
+		7BBF98F71E69084C002D63AE /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF98F61E69084C002D63AE /* EDStarRating.m */; };
+		7BBF98FA1E692888002D63AE /* NSImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF98F91E692888002D63AE /* NSImage+Extras.m */; };
+		7BBF99001E6957D8002D63AE /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF98FD1E6957D8002D63AE /* shockedface2_empty.png */; };
+		7BBF99011E6957D8002D63AE /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF98FE1E6957D8002D63AE /* shockedface2_full.png */; };
+		7BBF99021E6957D8002D63AE /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF98FF1E6957D8002D63AE /* shockedface2_half.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,13 @@
 		7B2B5D4B1E68394400A1C58B /* potatoBugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = potatoBugThumb.jpg; path = Assets.xcassets/potatoBugThumb.jpg; sourceTree = "<group>"; };
 		7B2B5D4C1E68394400A1C58B /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wolfSpider.jpg; path = Assets.xcassets/wolfSpider.jpg; sourceTree = "<group>"; };
 		7B2B5D4D1E68394400A1C58B /* wolfSpiderThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wolfSpiderThumb.jpg; path = Assets.xcassets/wolfSpiderThumb.jpg; sourceTree = "<group>"; };
+		7BBF98F51E69084C002D63AE /* EDStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDStarRating.h; sourceTree = "<group>"; };
+		7BBF98F61E69084C002D63AE /* EDStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDStarRating.m; sourceTree = "<group>"; };
+		7BBF98F91E692888002D63AE /* NSImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extras.m"; sourceTree = "<group>"; };
+		7BBF98FB1E6928A3002D63AE /* NSImage+Extras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extras.h"; sourceTree = "<group>"; };
+		7BBF98FD1E6957D8002D63AE /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockedface2_empty.png; path = Assets.xcassets/shockedface2_empty.png; sourceTree = "<group>"; };
+		7BBF98FE1E6957D8002D63AE /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockedface2_full.png; path = Assets.xcassets/shockedface2_full.png; sourceTree = "<group>"; };
+		7BBF98FF1E6957D8002D63AE /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockedface2_half.png; path = Assets.xcassets/shockedface2_half.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,9 @@
 		7B2B5D171E68187500A1C58B /* ScrayBugsMac */ = {
 			isa = PBXGroup;
 			children = (
+				7BBF98FC1E6957A0002D63AE /* Art */,
+				7BBF98F81E692840002D63AE /* Helpers */,
+				7BBF98F41E690607002D63AE /* Views */,
 				7B2B5D2F1E681E3500A1C58B /* Model */,
 				7B2B5D2E1E681DF000A1C58B /* GUI */,
 				7B2B5D1E1E68187500A1C58B /* Assets.xcassets */,
@@ -127,6 +142,34 @@
 				7B2B5D341E68202800A1C58B /* ScrayBugsDoc.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7BBF98F41E690607002D63AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF98F51E69084C002D63AE /* EDStarRating.h */,
+				7BBF98F61E69084C002D63AE /* EDStarRating.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7BBF98F81E692840002D63AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF98F91E692888002D63AE /* NSImage+Extras.m */,
+				7BBF98FB1E6928A3002D63AE /* NSImage+Extras.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		7BBF98FC1E6957A0002D63AE /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF98FD1E6957D8002D63AE /* shockedface2_empty.png */,
+				7BBF98FE1E6957D8002D63AE /* shockedface2_full.png */,
+				7BBF98FF1E6957D8002D63AE /* shockedface2_half.png */,
+			);
+			name = Art;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,15 +231,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B2B5D1F1E68187500A1C58B /* Assets.xcassets in Resources */,
+				7BBF99001E6957D8002D63AE /* shockedface2_empty.png in Resources */,
 				7B2B5D521E68394400A1C58B /* potatoBug.jpg in Resources */,
 				7B2B5D541E68394400A1C58B /* wolfSpider.jpg in Resources */,
 				7B2B5D551E68394400A1C58B /* wolfSpiderThumb.jpg in Resources */,
 				7B2B5D511E68394400A1C58B /* ladybugThumb.jpg in Resources */,
 				7B2B5D4E1E68394400A1C58B /* centipede.jpg in Resources */,
 				7B2B5D4F1E68394400A1C58B /* centipedeThumb.jpg in Resources */,
+				7BBF99011E6957D8002D63AE /* shockedface2_full.png in Resources */,
 				7B2B5D221E68187500A1C58B /* MainMenu.xib in Resources */,
 				7B2B5D531E68394400A1C58B /* potatoBugThumb.jpg in Resources */,
 				7B2B5D501E68394400A1C58B /* ladybug.jpg in Resources */,
+				7BBF99021E6957D8002D63AE /* shockedface2_half.png in Resources */,
 				7B2B5D2D1E6818C900A1C58B /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +257,9 @@
 				7B2B5D1D1E68187500A1C58B /* main.m in Sources */,
 				7B2B5D2C1E6818C900A1C58B /* MasterViewController.m in Sources */,
 				7B2B5D1A1E68187500A1C58B /* AppDelegate.m in Sources */,
+				7BBF98F71E69084C002D63AE /* EDStarRating.m in Sources */,
 				7B2B5D321E681E9900A1C58B /* ScrayBugData.m in Sources */,
+				7BBF98FA1E692888002D63AE /* NSImage+Extras.m in Sources */,
 				7B2B5D351E68202800A1C58B /* ScrayBugsDoc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +408,7 @@
 				7B2B5D281E68187500A1C58B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
