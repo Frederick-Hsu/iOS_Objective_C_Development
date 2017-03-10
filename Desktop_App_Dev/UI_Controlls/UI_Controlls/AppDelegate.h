@@ -1,10 +1,11 @@
-//
-//  AppDelegate.h
-//  UI_Controlls
-//
-//  Created by Frederick Hsu on 09/03/2017.
-//  Copyright © 2017 Frederick Hsu. All rights reserved.
-//
+/**************************************************************************************************
+ * File name    : AppDelegate.h
+ * Description  : Define the AppDelegate class, design the main UI.
+ * Creator      : Frederick Hsu
+ * Creation date: Thu.  09 March 2017
+ * Copyright(C) 2017    All rights reserved.
+ *
+ **************************************************************************************************/
 
 #import <Cocoa/Cocoa.h>
 
