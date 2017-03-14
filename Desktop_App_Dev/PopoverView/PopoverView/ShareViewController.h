@@ -10,4 +10,6 @@
 
 @interface ShareViewController : NSViewController
 
+    - (IBAction)radioButtonsGroupClicked:(id)sender;
+
 @end
