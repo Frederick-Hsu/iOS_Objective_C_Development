@@ -10,4 +10,9 @@
 
 @interface FeedbackViewController : NSViewController
 
+    @property (weak) IBOutlet NSTextField *nameField;
+    @property (weak) IBOutlet NSSecureTextField *passwordField;
+
+    - (IBAction)commitButtonClicked:(id)sender;
+
 @end
