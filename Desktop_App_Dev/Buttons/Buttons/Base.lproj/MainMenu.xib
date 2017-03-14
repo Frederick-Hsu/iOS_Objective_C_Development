@@ -781,26 +781,15 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p77-pk-ouv">
-                        <rect key="frame" x="552" y="178" width="67" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Clicked" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="60c-fe-EwT">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="checkboxAction:" target="Voe-Tx-rLC" id="7Rf-Qm-9MT"/>
-                        </connections>
-                    </button>
                     <box fixedFrame="YES" title="Gender" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-y7-eDY">
-                        <rect key="frame" x="551" y="32" width="217" height="120"/>
+                        <rect key="frame" x="547" y="16" width="217" height="156"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView" id="7Dj-dV-ZeM">
-                            <rect key="frame" x="2" y="2" width="213" height="103"/>
+                            <rect key="frame" x="2" y="2" width="213" height="139"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBS-u7-ANH">
-                                    <rect key="frame" x="31" y="66" width="51" height="18"/>
+                                    <rect key="frame" x="31" y="102" width="51" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="radio" title="Male" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="sQa-NR-OBU">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -811,7 +800,7 @@
                                     </connections>
                                 </button>
                                 <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="8jZ-tw-sks">
-                                    <rect key="frame" x="31" y="28" width="65" height="18"/>
+                                    <rect key="frame" x="31" y="64" width="65" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="radio" title="Famale" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="EVB-JX-1T8">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -821,12 +810,34 @@
                                         <action selector="radioGroupClicked:" target="Voe-Tx-rLC" id="XVG-2d-R5a"/>
                                     </connections>
                                 </button>
+                                <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="BGz-GN-Q03">
+                                    <rect key="frame" x="31" y="30" width="79" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="Unknown" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="TuZ-nQ-mej">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="radioGroupClicked:" target="Voe-Tx-rLC" id="g4r-R5-s2e"/>
+                                    </connections>
+                                </button>
                             </subviews>
                         </view>
                     </box>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p77-pk-ouv">
+                        <rect key="frame" x="552" y="197" width="67" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Clicked" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="60c-fe-EwT">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="checkboxAction:" target="Voe-Tx-rLC" id="7Rf-Qm-9MT"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="132" y="573"/>
+            <point key="canvasLocation" x="132" y="572.5"/>
         </window>
     </objects>
     <resources>

@@ -47,9 +47,13 @@
         {
             NSLog(@"You choose the gender : Male");
         }
-        if (tag == 1)
+        else if (tag == 1)
         {
             NSLog(@"You choose the gender : Female");
+        }
+        else if (tag == 2)
+        {
+            NSLog(@"You choose the gender : Unknown");
         }
     }
 
