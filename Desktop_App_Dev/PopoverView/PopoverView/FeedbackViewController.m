@@ -20,4 +20,17 @@
         // Do view setup here.
     }
 
+    - (IBAction)commitButtonClicked:(id)sender
+    {
+        NSButton *button = sender;
+        NSString *name      = self.nameField.stringValue,
+                 *password  = self.passwordField.stringValue;
+        
+        NSLog(@"Now you have entered name : \"%@\" and password \"%@\".", name, password);
+        
+        /* Clean the 2 fields */
+        self.nameField.stringValue = @"";
+        self.passwordField.stringValue = @"";
+    }
+
 @end

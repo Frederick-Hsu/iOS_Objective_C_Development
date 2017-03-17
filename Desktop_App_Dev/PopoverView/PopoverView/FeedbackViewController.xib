@@ -8,6 +8,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FeedbackViewController">
             <connections>
+                <outlet property="nameField" destination="k0W-yE-hic" id="TlK-wZ-3Fs"/>
+                <outlet property="passwordField" destination="GS7-mb-ZWj" id="E9t-yl-b8j"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -44,7 +46,7 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GS7-mb-ZWj">
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GS7-mb-ZWj" customClass="NSSecureTextField">
                     <rect key="frame" x="114" y="96" width="211" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="4DJ-tT-19r">
@@ -63,6 +65,9 @@
 DQ
 </string>
                     </buttonCell>
+                    <connections>
+                        <action selector="commitButtonClicked:" target="-2" id="dZj-SG-k69"/>
+                    </connections>
                 </button>
             </subviews>
             <point key="canvasLocation" x="71.5" y="133.5"/>

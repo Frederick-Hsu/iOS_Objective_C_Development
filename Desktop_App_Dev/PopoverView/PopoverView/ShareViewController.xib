@@ -32,6 +32,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="radioButtonsGroupClicked:" target="-2" id="wKN-kL-fpN"/>
+                                </connections>
                             </button>
                             <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="oER-o6-7mb">
                                 <rect key="frame" x="32" y="40" width="64" height="18"/>
@@ -40,6 +43,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="radioButtonsGroupClicked:" target="-2" id="W9s-1H-OXA"/>
+                                </connections>
                             </button>
                             <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="HT8-Zi-f92">
                                 <rect key="frame" x="32" y="7" width="60" height="18"/>
@@ -48,6 +54,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="radioButtonsGroupClicked:" target="-2" id="jA8-tj-aBO"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>

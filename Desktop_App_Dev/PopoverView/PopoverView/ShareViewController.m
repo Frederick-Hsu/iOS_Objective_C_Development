@@ -20,4 +20,23 @@
         // Do view setup here.
     }
 
+    - (IBAction)radioButtonsGroupClicked:(id)sender
+    {
+        NSButton *radioBtn = sender;
+        NSInteger tag = radioBtn.tag;
+        
+        if (tag == 0)
+        {
+            NSLog(@"You choose \"Facebook\" to share.");
+        }
+        else if (tag == 1)
+        {
+            NSLog(@"You choose \"Twitter\" to share");
+        }
+        else if (tag == 2)
+        {
+            NSLog(@"You choose \"Weibo\" to share.");
+        }
+    }
+
 @end
