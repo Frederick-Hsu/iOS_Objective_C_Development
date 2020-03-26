@@ -11,9 +11,9 @@
 
 @implementation Circle
 
-// @synthesize radius;
-// @synthesize x;
-// @synthesize y;
+@synthesize radius;
+@synthesize x;
+@synthesize y;
 
 - (void)print
 {
@@ -31,6 +31,16 @@
 + (int)allNum
 {
     return sum;
+}
+
+- (void)setX:(int)_x
+{
+    x = _x;
+}
+
+- (void)setRadius:(int)_radius
+{
+    radius = _radius;
 }
 
 @end

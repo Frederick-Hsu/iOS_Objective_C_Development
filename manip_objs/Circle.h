@@ -10,7 +10,7 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-    #include <Foundation/Foundation.h>
+    #import <Foundation/Foundation.h>
 
     @interface Circle : NSObject
     {
@@ -27,11 +27,15 @@
     public:
      */
     @property(nonatomic) int radius;
-    @property(nonatomic) int x, y;
+    @property(nonatomic, getter=gr, setter=sr:) int x;
+    @property(nonatomic) int y;
 
     - (void)print;      /* - is instance method, + is class method */
     - (void)setR:(int)_r andX:(int)_x andY:(int)_y;
     + (int)allNum;
+
+    - (void)setX:(int)_x;
+    - (void)setRadius:(int)_radius;
 
     @end
 
