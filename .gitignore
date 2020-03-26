@@ -1,0 +1,4 @@
+# These file extensions below will be ignored by git tracking:
+
+*.d
+*.o
