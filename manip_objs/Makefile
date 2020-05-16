@@ -1,34 +1,56 @@
 # File name		: Makefile
-# Description	: This file defines the script on how to build current project.
-# Creator		: Frederick Hsu
-# Creation date	: Thur.	26 March 2020
-# Copyright(C)	2020	All rights reserved
+# Description	: This is a universal makefile script, which guides you how to build your project automatically.
+# Creator		: Frederique Hsu
+# Creation date : Sat.	16 May 2020
+# Copyright(C)	2020	All rights reserved.
 #
 
-OBJS = main.o Circle.o misc.o XYPoint.o ShapeCircle.o testing.o
 
-manip_objs : $(OBJS)
-	gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base $(OBJS) -o manip_objs
+# Only need to change this EXECUTABLE variable later for each project
+EXECUTABLE = manip_objs
 
-main.o : main.m Circle.h testing.h
-	gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base -c main.m
+# The below lines are not necessary to change
+CURRENT_DIR = .
 
-Circle.o : Circle.m Circle.h
-	gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base -c Circle.m
+SRCEXTS = .m .mm
+HDREXTS = .h
 
-misc.o : misc.m misc.h
-	gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base -c misc.m
-
-XYPoint.o : XYPoint.m XYPoint.h
-	gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base -c XYPoint.m
-
-ShapeCircle.o : ShapeCircle.m ShapeCircle.h XYPoint.h
-	gcc `gnustep-config --objc-flags` -Wl,---no-as-needed -lobj -lgnustep-base -c ShapeCircle.m
-
-testing.o : testing.m testing.h ShapeCircle.h
-	gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base -c testing.m
+DIRS = $(shell find $(CURRENT_DIR) -maxdepth 4 -type d)
+SOURCES = $(foreach dir, $(DIRS), $(wildcard $(dir)/*$(SRCEXTS)))
+OBJECTS = $(addsuffix .o, $(basename $(SOURCES)))
 
 
-.PHONY : clean
+# Which compiler 
+CC = gcc
+# Which libraries to link
+LIBS = 
+# Which mode do you want to build, options: Debug, Release
+MODE = Debug
+# Profiling option: -p
+PROF =
+
+CFLAGS = `gnustep-config --objc-flags` -Wl,--no-as-needed -lobjc -lgnustep-base
+
+
+.PHONY : all clean show rebuild
+all : $(EXECUTABLE)
+
+$(EXECUTABLE) : $(OBJECTS)
+	$(CC) $(CFLAGS) $^ -o $@
+
+%.o : %.m
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean :
-	-rm -frv $(OBJS) manip_objs *.o *.d
+	@echo "Removing all linked and compiled files..."
+	@find . -name "*.o" -exec rm -frv {} \;
+	@find . -name "*.d" -exec rm -frv {} \;
+	@-rm -frv $(EXECUTABLE)
+
+show :
+	@echo "DIRS : " $(DIRS)
+	@echo "SOURCES : "$(SOURCES)
+	@echo "OBJECTS : " $(OBJECTS)
+	@echo "EXECUTABLE : " $(EXECUTABLE)
+
+rebuild : clean all
