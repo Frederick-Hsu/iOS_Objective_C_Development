@@ -15,7 +15,7 @@
 - (id)initWithLength:(int)length
 {
     self = [super initWithWidth:length andHeight:length];
-    if (self)
+    if (self == nil)
         return nil;
     return self;
 }

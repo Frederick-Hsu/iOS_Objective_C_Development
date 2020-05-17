@@ -23,10 +23,11 @@
 - (id)initWithWidth:(int)wd andHeight:(int)ht
 {
     self = [super init];
-    if (self)
+    if (self == nil)
         return nil;
     width = wd;
     height = ht;
     return self;
 }
+
 @end
