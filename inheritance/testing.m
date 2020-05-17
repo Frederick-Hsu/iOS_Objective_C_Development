@@ -2,8 +2,16 @@
 #import "Rectangle.h"
 #import "Square.h"
 #import "misc.h"
+#import "dynamic_binding.h"
 
-// #import <Cocoa/Cocoa.h>
+void execute_test_items(void)
+{
+    downCast();
+    NSLog(@"\n");
+
+    convertID();
+    NSLog(@"\n");
+}
 
 
 void accessObjs(void)
@@ -37,4 +45,20 @@ void verifyMethodOverride(void)
     [bobj initVar];
     [bobj printVar];
     [bobj release];
+
+    /*==========================================================================*/
+
+    ClassA* a = [[ClassA alloc] init];
+    ClassB* b = [[ClassB alloc] initVarX:1234 andY:5432];
+
+    [a initVar:3306];
+    [a printVar];
+
+    [b initVar];
+    [b printVar];
+
+    [a release];
+    [b release];
+
+    /*==========================================================================*/
 }
