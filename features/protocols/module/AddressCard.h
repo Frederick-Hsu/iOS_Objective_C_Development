@@ -13,6 +13,7 @@
     
     - (void)encodeWithCoder:(NSCoder*)aCoder;
     - (id)initWithCoder:(NSCoder*)aDecoder;
+    - (id)initWithName:(NSString*)your_name andEmail:(NSString*)your_email;
     @end
 
 
