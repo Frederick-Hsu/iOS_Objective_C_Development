@@ -5,7 +5,8 @@
 
     @interface AddressCard (AddressCardCategory)
     - (void)uppercaseName;
-    - (BOOL)compareName:(AddressCard*)anotherCard;
     @end
+
+    void testAddressCard(void);
 
 #endif  /* ADDRESS_CARD_CATEGORY_H */

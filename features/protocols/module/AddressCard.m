@@ -20,6 +20,7 @@
     return self;
 }
 
+#if 0
 - (id)initWithName:(NSString*)your_name andEmail:(NSString*)your_email
 {
     self = [super init];
@@ -28,5 +29,33 @@
     name = your_name;
     email = your_email;
     return self;
+}
+#endif
+
+- (NSComparisonResult)compareName:(AddressCard*)element
+{
+    return [name compare:element.name];
+}
+
++ (BOOL)isMailOk:(NSString*)validEmail
+{
+    return ([validEmail rangeOfString:@"@"].length > 0);
+}
+
+- (AddressCard*)initWithName:(NSString*)your_name andEmail:(NSString*)your_email
+{
+    self = [super init];
+    if (self == nil)
+        return nil;
+    name = your_name;
+    email = your_email;
+    return self;
+}
+
+- (void)dealloc
+{
+    [name release];
+    [email release];
+    [super dealloc];
 }
 @end

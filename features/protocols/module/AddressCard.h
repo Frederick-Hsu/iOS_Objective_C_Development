@@ -8,12 +8,16 @@
         NSString* name;
         NSString* email;
     }
-    @property (nonatomic, readwrite, assign) NSString* name;
-    @property (nonatomic, readwrite, assign) NSString* email;
+    @property (nonatomic, copy) NSString* name;
+    @property (nonatomic, copy) NSString* email;
     
     - (void)encodeWithCoder:(NSCoder*)aCoder;
     - (id)initWithCoder:(NSCoder*)aDecoder;
-    - (id)initWithName:(NSString*)your_name andEmail:(NSString*)your_email;
+    // - (id)initWithName:(NSString*)your_name andEmail:(NSString*)your_email;
+    - (AddressCard*)initWithName:(NSString*)your_name andEmail:(NSString*)your_email;
+
+    - (NSComparisonResult)compareName:(AddressCard*)element;
+    + (BOOL)isMailOk:(NSString*)validEmail;
     @end
 
 
